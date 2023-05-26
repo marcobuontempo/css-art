@@ -3,14 +3,12 @@ function Artwork({ children }) { return <>{children}</> };
 
 
 
-
-
 /* 1. Import Artworks */
-import Smiley from "./Smiley/Smiley";
+import Grimmace from "./Smiley/Grimmace";
+
 
 /* 2. Add Artwork as property */
-Artwork.Smiley = Smiley;
-
+Artwork.Grimmace = Grimmace;
 
 
 

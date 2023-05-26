@@ -3,15 +3,17 @@ import "./ArtFrame.css";
 
 export default function ArtFrame({ artworkComponent, frameColour, canvasColour, artname }) {
   return (
-    <div
+    <article
       className="artframe"
       style={{
         border: `40px solid ${frameColour}`,
         backgroundColor: canvasColour,
       }}
+      role='img'
+      aria-label={artname}
     >
       {artworkComponent}
-      <span>{artname}</span>
-    </div>
+      <span className="artframe__name">{artname}</span>
+    </article>
   );
 }

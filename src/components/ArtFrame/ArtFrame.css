@@ -1,11 +1,13 @@
 .artframe {
     width: 400px;
     height: 400px;
-    padding: 30px;
+    min-width: 400px;
+    min-height: 400px;
     position: relative;
 }
 
-.artframe>div {
-    width: 100%;
-    height: 100%;
+.artframe__name {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
 }

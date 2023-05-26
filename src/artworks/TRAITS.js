@@ -1,6 +1,5 @@
 export default {
-    ONEDIV: 'ONEDIV',
-    PURECSS: 'PURECSS',
-    PIXELART: 'PIXELART',
+    ONEDIV: 'ONE DIV',
+    PIXELART: 'PIXEL ART',
     ANIMATED: 'ANIMATED',
 }
