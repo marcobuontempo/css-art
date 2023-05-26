@@ -1,0 +1,109 @@
+.citrus,
+.citrus::before,
+.citrus::after {
+	position: absolute;
+	margin: auto;
+	
+  --background-colour: deepskyblue;
+  --lime-colour: rgba(0, 255, 0, 0.85);
+  --lemon-colour: rgba(255, 255, 0, 0.85);
+  --grapefruit-colour: rgba(235, 30, 235, 0.85);
+}
+
+/* GRAPEFRUIT */
+.citrus {
+	width: 50%;
+	height: 50%;
+	left: 12.5%;
+	top: 30%;
+  border-radius: 50%;
+  background: 
+	/* SEMI-CIRCLE SHAPE */
+	linear-gradient(
+      to top,
+      transparent 49%,
+      var(--background-colour) 50.5% 100%
+    ),
+		/* OUTER SKIN */
+    radial-gradient(transparent 0 65%, var(--grapefruit-colour) 68% 100%),
+		/* CIRCULAR OUTER AND INNER PITH */
+    radial-gradient(white 0% 8%, transparent 9.5% 61%, white 63% 67%),
+		/* INNER PITH LINES */
+    conic-gradient(
+      var(--grapefruit-colour) 0% 34.3%,
+      white 35%,
+      var(--grapefruit-colour) 35.7% 44.3%,
+			white 45%,
+      var(--grapefruit-colour) 45.7% 54.3%,
+			white 55%,
+      var(--grapefruit-colour) 55.7% 64.3%,
+			white 65%,
+      var(--grapefruit-colour) 65.7% 75%
+    );
+}
+
+/* LIME */
+.citrus::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	bottom: 25%;
+	left: 25%;
+  border-radius: 50%;
+  background: 
+	/* SEMI-CIRCLE SHAPE */
+	linear-gradient(
+      to top,
+      transparent 49%,
+      var(--background-colour) 50.5% 100%
+    ),
+		/* OUTER SKIN */
+    radial-gradient(transparent 0 65%, var(--lime-colour) 68% 100%),
+		/* CIRCULAR OUTER AND INNER PITH */
+    radial-gradient(white 0% 8%, transparent 9.5% 61%, white 63% 67%),
+		/* INNER PITH LINES */
+    conic-gradient(
+      var(--lime-colour) 0% 34.3%,
+      white 35%,
+      var(--lime-colour) 35.7% 44.3%,
+			white 45%,
+      var(--lime-colour) 45.7% 54.3%,
+			white 55%,
+      var(--lime-colour) 55.7% 64.3%,
+			white 65%,
+      var(--lime-colour) 65.7% 75%
+    );
+}
+
+/* LEMON */
+.citrus::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: 50%;
+	bottom: 50%;
+  border-radius: 50%;
+  background: 
+	/* SEMI-CIRCLE SHAPE */
+	linear-gradient(
+      to top,
+      transparent 49%,
+      var(--background-colour) 50.5% 100%
+    ),
+		/* OUTER SKIN */
+    radial-gradient(transparent 0 65%, var(--lemon-colour) 68% 100%),
+		/* CIRCULAR OUTER AND INNER PITH */
+    radial-gradient(white 0% 8%, transparent 9.5% 61%, white 63% 67%),
+		/* INNER PITH LINES */
+    conic-gradient(
+      var(--lemon-colour) 0% 34.3%,
+      white 35%,
+      var(--lemon-colour) 35.7% 44.3%,
+			white 45%,
+      var(--lemon-colour) 45.7% 54.3%,
+			white 55%,
+      var(--lemon-colour) 55.7% 64.3%,
+			white 65%,
+      var(--lemon-colour) 65.7% 75%
+    );
+}

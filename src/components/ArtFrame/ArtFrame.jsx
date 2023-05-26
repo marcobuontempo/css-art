@@ -13,7 +13,7 @@ export default function ArtFrame({ artworkComponent, frameColour, canvasColour, 
       aria-label={artname}
     >
       {artworkComponent}
-      <span className="artframe__name">{artname}</span>
+      <span className="artframe__name" style={{color:frameColour}}>{artname}</span>
     </article>
   );
 }
