@@ -1,5 +1,5 @@
 /* Parent Component -- NO Modification needed */
-function Artwork({ children }) { return <>{children}</> };
+function Artwork({ children }) { return <>{children}</> }
 
 
 

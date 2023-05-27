@@ -9,5 +9,19 @@
 .artframe__name {
     position: absolute;
     bottom: 2px;
-    left: 2px;
+    left: 5px;
+}
+
+.artframe__traits {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: -24px;
+}
+
+.artframe__trait {
+    list-style-type: none;
+    padding: 0px 5px;
 }
