@@ -1,0 +1,62 @@
+.orbit,
+.orbit::before,
+.orbit::after {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* EARTH */
+.orbit {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 82% 50%, blue 0% 3%, transparent 5%);
+  overflow: visible;
+  animation: orbit 60s linear infinite;
+}
+
+/* SUN */
+.orbit::before {
+  content: '';
+  background: 
+  radial-gradient(circle, yellow 0% 8%, transparent 16%),
+  /* STARS */
+  radial-gradient(circle at 5% 70%, white 0% 0.1%, transparent 0.3%),
+  radial-gradient(circle at 10% 25%, white 0% 0.1%, transparent 0.3%),
+  radial-gradient(circle at 10% 80%, white 0% 0.1%, transparent 0.3%),
+  radial-gradient(circle at 30% 10%, white 0% 0.1%, transparent 0.3%),
+  radial-gradient(circle at 35% 60%, white 0% 0.1%, transparent 0.3%),
+  radial-gradient(circle at 40% 30%, white 0% 0.1%, transparent 0.3%),
+  radial-gradient(circle at 50% 90%, white 0% 0.1%, transparent 0.3%),
+  radial-gradient(circle at 60% 10%, white 0% 0.1%, transparent 0.3%),
+  radial-gradient(circle at 70% 50%, white 0% 0.1%, transparent 0.3%),
+  radial-gradient(circle at 80% 80%, white 0% 0.1%, transparent 0.3%),
+  radial-gradient(circle at 85% 15%, white 0% 0.1%, transparent 0.3%),
+  radial-gradient(circle at 90% 10%, white 0% 0.1%, transparent 0.3%),
+  radial-gradient(circle at 90% 90%, white 0% 0.1%, transparent 0.3%),
+  radial-gradient(circle at 95% 20%, white 0% 0.1%, transparent 0.3%);
+  width: 100%;
+  height: 100%;
+  animation: orbit 45s linear infinite reverse;
+}
+
+/* MOON */
+.orbit::after {
+  content: '';
+  left: 64%;
+  background: radial-gradient(circle at 70% 50%, white 0% 1%, transparent 2.5%);
+  animation: orbit 6s linear infinite;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

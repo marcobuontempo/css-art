@@ -9,6 +9,6 @@ function Grimmace() {
 Grimmace.artname = "Grimmace.";
 Grimmace.frameColour = "orange";
 Grimmace.canvasColour = "lightblue"
-Grimmace.traits = [TRAITS.ONEDIV, TRAITS.ANIMATED];
+Grimmace.traits = [TRAITS.ONEDIV];
 
 export default Grimmace;
