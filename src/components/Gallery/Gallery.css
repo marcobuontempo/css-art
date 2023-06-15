@@ -1,5 +1,5 @@
 .gallery {
-    height: calc(100% - var(--navbar-height));
+    min-height: calc(100% - var(--navbar-height));
     display: flex;
     gap: 30px;
     padding: 50px;
