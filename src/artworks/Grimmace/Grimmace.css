@@ -3,7 +3,6 @@
 .grimmace::after {
   width: 85%;
   height: 85%;
-  position: absolute;
   margin: auto;
   left: 0;
   top: 0;
@@ -12,6 +11,8 @@
 }
 
 .grimmace {
+  position: relative;
+  top: 7.5%;
   border-radius: 50%;
   border: 10px solid rgba(255, 255, 255, 0.9);
   background:
@@ -87,4 +88,15 @@
       rgba(100, 100, 100, 0.9) 83% 85%,
       white 85% 100%
     );
+}
+
+.grimmace::before {
+  content: "";
+  position: absolute;
+  width: 126.5%;
+  height: 126.5%;
+  top: 0%;
+  left: -13.25%;
+  background: 
+  radial-gradient(circle, transparent 0% 61%, lightblue 63%);
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import TRAITS from '../TRAITS'
 import './Rook.css'
 

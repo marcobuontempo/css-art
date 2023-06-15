@@ -1,4 +1,3 @@
-import React from "react";
 import "./NavBar.css";
 import TRAITS from '../../artworks/TRAITS'
 

@@ -1,13 +1,11 @@
-import React from "react";
 import "./ArtFrame.css";
 
-export default function ArtFrame({ artworkComponent, frameColour, canvasColour, artname, traits }) {
+export default function ArtFrame({ artworkComponent, frameColour, artname, traits }) {
   return (
     <article
       className="artframe"
       style={{
-        border: `30px solid ${frameColour}`,
-        backgroundColor: canvasColour,
+        border: `30px solid ${frameColour}`
       }}
       role='img'
       aria-label={artname}
@@ -15,7 +13,7 @@ export default function ArtFrame({ artworkComponent, frameColour, canvasColour, 
       {artworkComponent}
       <span className="artframe__name" style={{ color: frameColour }}>{artname}</span>
       <ul className="artframe__traits">
-        {traits.map(trait => <li className="artframe__trait" key={artname+trait}>{trait}</li>)}
+        {traits.map(trait => <li className="artframe__trait" key={artname + trait}>{trait}</li>)}
       </ul>
     </article>
   );

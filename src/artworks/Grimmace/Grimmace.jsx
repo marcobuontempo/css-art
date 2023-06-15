@@ -1,4 +1,3 @@
-import React from "react";
 import "./Grimmace.css";
 import TRAITS from "../TRAITS";
 
@@ -8,7 +7,6 @@ function Grimmace() {
 
 Grimmace.artname = "Grimmace.";
 Grimmace.frameColour = "orange";
-Grimmace.canvasColour = "lightblue"
 Grimmace.traits = [TRAITS.ONEDIV];
 
 export default Grimmace;

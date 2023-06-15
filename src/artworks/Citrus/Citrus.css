@@ -12,24 +12,23 @@
 
 /* GRAPEFRUIT */
 .citrus {
-	width: 50%;
-	height: 50%;
-	left: 12.5%;
-	top: 30%;
-  border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
   background: 
 	/* SEMI-CIRCLE SHAPE */
 	linear-gradient(
       to top,
-      transparent 49%,
-      var(--background-colour) 50.5% 100%
+      transparent 47.5%,
+      var(--background-colour) 48.5% 100%
     ),
 		/* OUTER SKIN */
-    radial-gradient(transparent 0 65%, var(--grapefruit-colour) 68% 100%),
+    radial-gradient(ellipse 40% 40% at 40% 52%, transparent 0 65%, var(--grapefruit-colour) 68%, var(--background-colour) 68%),
 		/* CIRCULAR OUTER AND INNER PITH */
-    radial-gradient(white 0% 8%, transparent 9.5% 61%, white 63% 67%),
+    radial-gradient(ellipse 40% 40% at 40% 52%, white 0% 8%, transparent 9.5% 61%, white 63% 67%),
 		/* INNER PITH LINES */
-    conic-gradient(
+    conic-gradient(at 40% 52%,
       var(--grapefruit-colour) 0% 34.3%,
       white 35%,
       var(--grapefruit-colour) 35.7% 44.3%,
@@ -45,16 +44,16 @@
 /* LIME */
 .citrus::before {
 	content: "";
-	width: 100%;
-	height: 100%;
-	bottom: 25%;
-	left: 25%;
+	width: 55%;
+	height: 55%;
+	bottom: 32.5%;
+	left: 22.5%;
   border-radius: 50%;
   background: 
 	/* SEMI-CIRCLE SHAPE */
 	linear-gradient(
       to top,
-      transparent 49%,
+      transparent 49.5%,
       var(--background-colour) 50.5% 100%
     ),
 		/* OUTER SKIN */
@@ -78,17 +77,17 @@
 /* LEMON */
 .citrus::after {
 	content: "";
-	width: 100%;
-	height: 100%;
-	left: 50%;
-	bottom: 50%;
+	width: 55%;
+	height: 55%;
+	left: 32.5%;
+	bottom: 45%;
   border-radius: 50%;
   background: 
 	/* SEMI-CIRCLE SHAPE */
 	linear-gradient(
       to top,
-      transparent 49%,
-      var(--background-colour) 50.5% 100%
+      transparent 51%,
+      var(--background-colour) 52.5% 100%
     ),
 		/* OUTER SKIN */
     radial-gradient(transparent 0 65%, var(--lemon-colour) 68% 100%),
