@@ -4,21 +4,32 @@
     min-width: 400px;
     min-height: 400px;
     position: relative;
+    --frame-width: 25px;
+    --frame-colour: white;
+    border: var(--frame-width) solid var(--frame-colour);
+}
+
+.artframe__info {
+    position: absolute;
+    height: var(--frame-width);
+    bottom: calc(-1 * var(--frame-width));
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .artframe__name {
-    position: absolute;
-    bottom: 2px;
-    left: 5px;
+    color: var(--frame-colour);
+    filter: invert(1) grayscale(1);
 }
 
 .artframe__traits {
-    position: absolute;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
-    bottom: -24px;
 }
 
 .artframe__trait {

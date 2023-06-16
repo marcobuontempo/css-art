@@ -6,7 +6,7 @@ function Heart() {
 }
 
 Heart.artname = "Heart.";
-Heart.frameColour = "orange";
+Heart.frameColour = "orchid";
 Heart.traits = [TRAITS.ONEDIV, TRAITS.PIXELART, TRAITS.ANIMATED, TRAITS.INTERACTIVE];
 
 export default Heart;

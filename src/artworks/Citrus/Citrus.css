@@ -53,8 +53,8 @@
 	/* SEMI-CIRCLE SHAPE */
 	linear-gradient(
       to top,
-      transparent 49.5%,
-      var(--background-colour) 50.5% 100%
+      transparent 50.5%,
+      var(--background-colour) 51.5% 100%
     ),
 		/* OUTER SKIN */
     radial-gradient(transparent 0 65%, var(--lime-colour) 68% 100%),
@@ -86,8 +86,8 @@
 	/* SEMI-CIRCLE SHAPE */
 	linear-gradient(
       to top,
-      transparent 51%,
-      var(--background-colour) 52.5% 100%
+      transparent 50.5%,
+      var(--background-colour) 51.5% 100%
     ),
 		/* OUTER SKIN */
     radial-gradient(transparent 0 65%, var(--lemon-colour) 68% 100%),

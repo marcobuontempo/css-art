@@ -9,7 +9,7 @@
   bottom: 0;
 }
 
-/* EARTH */
+/* SUN & SPACE */
 .orbit {
   width: 100%;
   height: 100%;
@@ -30,16 +30,16 @@
     radial-gradient(circle at 90% 10%, white 0% 0.1%, transparent 0.3%),
     radial-gradient(circle at 90% 90%, white 0% 0.1%, transparent 0.3%),
     radial-gradient(circle at 95% 20%, white 0% 0.1%, transparent 0.3%),
-    black;
+    radial-gradient(circle at 50% 50%, transparent 0%, rgb(35, 35, 35) 15% 27.5%, rgb(25, 25, 25) 30% 45%, rgb(15, 15, 15) 47.5% 60%, black 62.5% 100%);
   /* animation: orbit 60s linear infinite reverse; */
 }
 
-/* SUN */
+/* EARTH */
 .orbit::before {
   content: '';
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 50% 30%, darkblue 0% 3%, transparent 5%);
+  background: radial-gradient(circle at 50% 30%, darkblue 0% 3%, transparent 4.2%);
   overflow: visible;
   animation: orbit 12s linear infinite;
 }

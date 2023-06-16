@@ -193,5 +193,6 @@
 
   to {
     transform: scale(0.8);
+    filter: hue-rotate(-60deg);
   }
 }

@@ -8,9 +8,11 @@ import Citrus from "./Citrus/Citrus";
 import Orbit from "./Orbit/Orbit";
 import Rook from "./Rook/Rook";
 import Heart from "./Heart/Heart";
+import Scenic from "./Scenic/Scenic";
 
 
 /* 2. Add Artwork as property */
+Artwork.Scenic = Scenic;
 Artwork.Heart = Heart;
 Artwork.Grimmace = Grimmace;
 Artwork.Orbit = Orbit;
