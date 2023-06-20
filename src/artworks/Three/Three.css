@@ -1,0 +1,54 @@
+.three,
+.three::before,
+.three::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  --c: red;
+}
+
+.three {
+  background:
+  linear-gradient(to bottom, white 15%, transparent 15% 100%),
+  radial-gradient(ellipse 30% 30% at 42.5% 40%, white 0% 50%, transparent 50% 100%),
+  radial-gradient(ellipse 35% 28% at 47.5% 65%, white 0% 50%, transparent 50% 100%),
+  radial-gradient(ellipse 45% 45% at 50% 30%, var(--c) 0% 50%, transparent 50% 100%),
+  radial-gradient(ellipse 60% 45% at 50% 65%, var(--c) 0% 50%, transparent 50% 100%),
+  white;
+  animation: colour-shift 5s ease-in-out infinite alternate;
+}
+
+.three::before {
+  content: "THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE";
+  text-align: center;
+  color: red;
+  opacity: 0.25;
+  animation: colour-shift 5s ease-in-out infinite alternate;
+}
+
+.three::after {
+  content: "";
+  background: rgba(0,0,0,0.2);
+}
+
+@keyframes colour-shift {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  20% {
+    filter: hue-rotate(60deg);
+  }
+  40% {
+    filter: hue-rotate(120deg);
+  }
+  60% {
+    filter: hue-rotate(180deg);
+  }
+  80% {
+    filter: hue-rotate(240deg);
+  }
+  100% {
+    filter: hue-rotate(300deg);
+  }
+}

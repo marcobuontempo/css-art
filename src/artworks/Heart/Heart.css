@@ -183,8 +183,9 @@
     calc(1 * var(--pixel-size)) calc(6 * var(--pixel-size)) black,
     /* ROW 14 */
     calc(0 * var(--pixel-size)) calc(7 * var(--pixel-size)) black;
-    animation: heart-effect 2.5s ease-out infinite alternate;
-  }
+  
+  animation: heart-effect 2.5s ease-out infinite alternate;
+}
 
 @keyframes heart-effect {
   from {

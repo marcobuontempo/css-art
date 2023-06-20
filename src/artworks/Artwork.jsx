@@ -10,9 +10,12 @@ import Rook from "./Rook/Rook";
 import Heart from "./Heart/Heart";
 import Scenic from "./Scenic/Scenic";
 import Room from "./Room/Room";
+import Three from "./Three/Three";
 
 
 /* 2. Add Artwork as property */
+Artwork.Three = Three;
+Artwork.Room = Room;
 Artwork.Room = Room;
 Artwork.Scenic = Scenic;
 Artwork.Heart = Heart;
