@@ -7,4 +7,4 @@ export default function Room() {
 
 Room.artname = "Room.";
 Room.frameColour = "brown";
-Room.traits = [TRAITS.ONEDIV];
+Room.traits = [TRAITS.ONEDIV, TRAITS.ANIMATED, TRAITS.INTERACTIVE];

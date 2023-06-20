@@ -11,9 +11,23 @@ import Heart from "./Heart/Heart";
 import Scenic from "./Scenic/Scenic";
 import Room from "./Room/Room";
 import Three from "./Three/Three";
+import AvoPear from "./AvoPear/AvoPear";
+import Ross from "./Ross/Ross";
+import StickyBanana from "./StickyBanana/StickyBanana";
+import Tear from "./Tear/Tear";
+import Amaze from "./Amaze/Amaze";
+import Terminal from "./Terminal/Terminal";
+import GreatWave from "./GreatWave/GreatWave";
 
 
 /* 2. Add Artwork as property */
+Artwork.GreatWave = GreatWave;
+Artwork.Terminal = Terminal;
+Artwork.Ross = Ross;
+Artwork.StickyBanana = StickyBanana;
+Artwork.Tear = Tear;
+Artwork.Amaze = Amaze;
+Artwork.AvoPear = AvoPear;
 Artwork.Three = Three;
 Artwork.Room = Room;
 Artwork.Room = Room;

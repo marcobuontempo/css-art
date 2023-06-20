@@ -1,0 +1,12 @@
+.greatwave,
+.greatwave::before,
+.greatwave::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+}
+
+.greatwave {
+  background: white;
+}
