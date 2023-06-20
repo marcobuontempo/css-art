@@ -9,9 +9,11 @@ import Orbit from "./Orbit/Orbit";
 import Rook from "./Rook/Rook";
 import Heart from "./Heart/Heart";
 import Scenic from "./Scenic/Scenic";
+import Room from "./Room/Room";
 
 
 /* 2. Add Artwork as property */
+Artwork.Room = Room;
 Artwork.Scenic = Scenic;
 Artwork.Heart = Heart;
 Artwork.Grimmace = Grimmace;

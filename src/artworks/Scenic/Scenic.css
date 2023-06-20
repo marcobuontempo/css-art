@@ -5,6 +5,7 @@
   height: 100%;
   position: absolute;
   margin: auto;
+  filter: sepia(0.25);
 }
 
 .scenic {
