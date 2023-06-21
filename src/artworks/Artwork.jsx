@@ -18,9 +18,13 @@ import Tear from "./Tear/Tear";
 import Amaze from "./Amaze/Amaze";
 import Terminal from "./Terminal/Terminal";
 import GreatWave from "./GreatWave/GreatWave";
+import Almost from "./Almost/Almost";
+import Pong from "./Pong/Pong";
 
 
 /* 2. Add Artwork as property */
+Artwork.Almost = Almost;
+Artwork.Pong = Pong;
 Artwork.GreatWave = GreatWave;
 Artwork.Terminal = Terminal;
 Artwork.Ross = Ross;
