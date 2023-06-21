@@ -20,9 +20,11 @@ import Terminal from "./Terminal/Terminal";
 import GreatWave from "./GreatWave/GreatWave";
 import Almost from "./Almost/Almost";
 import Pong from "./Pong/Pong";
+import Harold from "./Harold/Harold";
 
 
 /* 2. Add Artwork as property */
+Artwork.Harold = Harold;
 Artwork.Almost = Almost;
 Artwork.Pong = Pong;
 Artwork.GreatWave = GreatWave;

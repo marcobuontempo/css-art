@@ -1,0 +1,12 @@
+.harold,
+.harold::before,
+.harold::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+}
+
+.harold {
+  background: white;
+}
