@@ -38,7 +38,27 @@
   top: 0;
   bottom: 0;
   background:
-    /* INNER CLOUD */
+    /* LAYER 1 */
+    radial-gradient(ellipse 50% 50% at 43% 29%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 50% 24%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 50% 28%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 57% 28%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 59% 33%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 58% 35%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 59% 40%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 54% 43%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 50% 45%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 56% 49%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 59% 52%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 63% 56%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 58% 61%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 64% 63%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 43% 60%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 52% 66%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 50% 71%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 59% 71%, midnightblue 11%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 43% 67%, midnightblue 11%, transparent 0%),
+    /* LAYER 2 */
     radial-gradient(ellipse 50% 50% at 43% 29%, var(--cloud) 15%, transparent 0%),
     radial-gradient(ellipse 50% 50% at 50% 24%, var(--cloud) 15%, transparent 0%),
     radial-gradient(ellipse 50% 50% at 50% 28%, var(--cloud) 15%, transparent 0%),
@@ -58,7 +78,7 @@
     radial-gradient(ellipse 50% 50% at 50% 71%, var(--cloud) 15%, transparent 0%),
     radial-gradient(ellipse 50% 50% at 59% 71%, var(--cloud) 15%, transparent 0%),
     radial-gradient(ellipse 50% 50% at 43% 67%, var(--cloud) 15%, transparent 0%),
-    /* BLACK OUTLINE */
+    /* LAYER 3 */
     radial-gradient(ellipse 50% 50% at 43% 29%, black 20%, transparent 0%),
     radial-gradient(ellipse 50% 50% at 50% 24%, black 20%, transparent 0%),
     radial-gradient(ellipse 50% 50% at 50% 28%, black 20%, transparent 0%),
@@ -136,12 +156,12 @@
 
 @keyframes shadow-position {
   from {
-    left: 15%;
+    left: 10%;
     right: 0;
   }
 
   to {
     left: 0;
-    right: 15%;
+    right: 10%;
   }
 }

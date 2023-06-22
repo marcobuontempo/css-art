@@ -2,7 +2,7 @@ import TRAITS from '../TRAITS'
 import './Tear.css'
 
 export default function Tear() {
-  return <div className='tear'>TEAR DROP</div>
+  return <div className='tear'></div>
 }
 
 Tear.artname = "Tear.";
