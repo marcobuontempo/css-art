@@ -52,11 +52,11 @@
 
 @keyframes amaze-side {
   from {
-    background-position: -3% 0%;
+    background-position: -2.25% 0%;
   }
 
   to {
-    background-position: 3% 0%;
+    background-position: 2.25% 0%;
   }
 }
 

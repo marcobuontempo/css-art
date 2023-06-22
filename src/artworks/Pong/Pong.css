@@ -10,14 +10,15 @@
 /* BACKGROUND */
 .pong {
   overflow: hidden;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 100%;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.3);
   text-align: center;
   padding-top: 50%;
-  background: black;
+  background: navy;
+  border: 5px solid white;
 }
 
 /* BALL */
@@ -41,7 +42,7 @@
   bottom: 0;
   transform: skewY(0deg);
   background:
-    linear-gradient(to bottom, black 40%, transparent 40% 60%, black 60% 100%),
+    linear-gradient(to bottom, navy 40%, transparent 40% 60%, navy 60% 100%),
     linear-gradient(to right, transparent 6%, white 6% 8%, transparent 8% 92%, white 92% 94%, transparent 94% 100%);
   animation: pong-blocks 5s linear infinite;
 }
