@@ -2,7 +2,7 @@ import TRAITS from '../TRAITS'
 import './Rego.css'
 
 export default function Rego() {
-  return <div className='rego'>VIC LICENSE PLATE</div>
+  return <div className='rego'></div>
 }
 
 Rego.artname = "Rego.";
