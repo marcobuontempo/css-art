@@ -1,11 +1,13 @@
 .artframe {
+    --frame-width: 25px;
+    --frame-colour: white;
+
+    position: relative;
     width: 400px;
     height: 400px;
     min-width: 400px;
     min-height: 400px;
-    position: relative;
-    --frame-width: 25px;
-    --frame-colour: white;
+    border-radius: 10px;
     background: var(--frame-colour);
     border: var(--frame-width) solid var(--frame-colour);
 }
@@ -31,9 +33,13 @@
     align-items: center;
     justify-content: flex-end;
     width: 100%;
+    height: var(--frame-width);
 }
 
 .artframe__trait {
     list-style-type: none;
     padding: 0px 5px;
+    width: var(--frame-width);
+    height: 100%; 
+    object-fit: contain;
 }

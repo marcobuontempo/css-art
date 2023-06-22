@@ -32,7 +32,7 @@ export default function Terminal() {
     {'> total 3\n'}
     {'> drwx------+ 1 ecorp staff 20480 Apr 18 11:35 .secrets\n'}
     {'> drwx------+ 1 ecorp staff 38174 Jun 19 13:06 passwords.dat\n'}
-    {'> drwx------+ 1 ecorp staff 32866 Aug 21 11:35 usernames.dat\n'}
+    {'> drwx------+ 1 ecorp staff 32866 Aug 21 08:53 usernames.dat\n'}
     {'>\n'}
     {'> elliot@ecorp-server:~$ fsociety.sh ./.secrets breach\n'}
     {'> breach in progress ..... %\n'}

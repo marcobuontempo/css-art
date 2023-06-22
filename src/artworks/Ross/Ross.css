@@ -6,15 +6,17 @@
   position: absolute;
   margin: auto;
   --bg: violet;
-  --skin: grey;
+  --skin: rgb(155, 155, 155);
 }
 
 /* FACE SHAPE & BACKGROUND */
 .ross {
   background:
+  /* BACKGROUND GLOW */
+  radial-gradient(ellipse 60% 75% at 50% 50%, rgba(0, 200, 255, 0.2) 50%, transparent 70%),
   /* SHADE */
-  radial-gradient(ellipse 20% 20% at 50% 75%, rgba(0, 0, 0, 0.15) 20%, transparent 80%),
-  radial-gradient(ellipse 40% 40% at 50% 50%, rgba(0, 0, 0, 0.25) 50%, transparent 70%),
+  radial-gradient(ellipse 20% 20% at 50% 75%, rgba(0, 0, 0, 0.1) 20%, transparent 80%),
+  radial-gradient(ellipse 40% 50% at 50% 55%, rgba(0, 0, 0, 0.25) 50%, transparent 70%),
   /* NOSTRILS */
   radial-gradient(ellipse 1% 2.5% at 52% 62%, rgba(0, 0, 0, 0.3) 20%, transparent 70%),
   radial-gradient(ellipse 1% 2.5% at 48% 62%, rgba(0, 0, 0, 0.3) 20%, transparent 70%),

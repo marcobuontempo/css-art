@@ -1,5 +1,5 @@
 /* Parent Component -- NO Modification needed */
-function Artwork({ children }) { return <>{children}</> }
+export default function Artwork({ children }) { return <>{children}</> }
 
 
 /* 1. Import Artworks */
@@ -9,7 +9,7 @@ import Orbit from "./Orbit/Orbit";
 import Rook from "./Rook/Rook";
 import Heart from "./Heart/Heart";
 import Scenic from "./Scenic/Scenic";
-import Room from "./Room/Room";
+import Corridoor from "./Corridoor/Corridoor";
 import Three from "./Three/Three";
 import AvoPear from "./AvoPear/AvoPear";
 import Ross from "./Ross/Ross";
@@ -41,15 +41,10 @@ Artwork.Tear = Tear;
 Artwork.Amaze = Amaze;
 Artwork.AvoPear = AvoPear;
 Artwork.Three = Three;
-Artwork.Room = Room;
-Artwork.Room = Room;
+Artwork.Corridoor = Corridoor;
 Artwork.Scenic = Scenic;
 Artwork.Heart = Heart;
 Artwork.Grimmace = Grimmace;
 Artwork.Orbit = Orbit;
 Artwork.Citrus = Citrus;
 Artwork.Rook = Rook;
-
-
-/* Default Export */
-export default Artwork;

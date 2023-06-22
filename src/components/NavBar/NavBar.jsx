@@ -18,7 +18,7 @@ export default function NavBar({ traitFilters, setTraitFilters }) {
               className={`navbar__item ${traitFilters.includes(trait) ? 'selected' : null}`}
               key={trait}
               onClick={() => toggleTrait(trait)}>
-              {TRAITS[trait].toLowerCase()}
+              {TRAITS[trait].name.toLowerCase()}
             </li>
           )
         }

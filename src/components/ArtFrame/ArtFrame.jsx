@@ -14,7 +14,7 @@ export default function ArtFrame({ artworkComponent, frameColour, artname, trait
       <span className="artframe__name" >{artname}</span>
 
       <ul className="artframe__traits">
-        {traits.map(trait => <li className="artframe__trait" key={artname + trait}>{trait}</li>)}
+        {traits.map(trait => <img className="artframe__trait" key={artname + trait.name} src={trait.icon} />)}
       </ul>
     </div>
 
