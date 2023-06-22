@@ -28,7 +28,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  transform: translate(-41%, 0%);
+  transform: translate(-40.5%, 0%);
   background: radial-gradient(red 0% 2.5%, transparent 2.5% 100%);
   animation: pong-ball 5s linear infinite;
 }
@@ -68,19 +68,19 @@
 
 @keyframes pong-ball {
   0% {
-    transform: translate(-41%, 0%);
+    transform: translate(-40.5%, 0%);
   }
 
   25% {
-    transform: translate(0%, 48%);
+    transform: translate(0%, 48.5%);
   }
 
   50% {
-    transform: translate(41%, 0%);
+    transform: translate(40.5%, 0%);
     filter: hue-rotate(360deg);
   }
 
   75% {
-    transform: translate(0%, -48%);
+    transform: translate(0%, -48.5%);
   }
 }

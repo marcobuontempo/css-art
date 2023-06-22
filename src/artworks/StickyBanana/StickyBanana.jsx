@@ -2,7 +2,7 @@ import TRAITS from '../TRAITS'
 import './StickyBanana.css'
 
 export default function StickyBanana() {
-  return <div className='stickybanana'>BANANA TAPED TO WALL</div>
+  return <div className='stickybanana'></div>
 }
 
 StickyBanana.artname = "Sticky Banana.";

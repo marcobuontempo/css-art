@@ -6,6 +6,7 @@
     position: relative;
     --frame-width: 25px;
     --frame-colour: white;
+    background: var(--frame-colour);
     border: var(--frame-width) solid var(--frame-colour);
 }
 
