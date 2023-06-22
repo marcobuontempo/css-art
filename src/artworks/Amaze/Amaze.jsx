@@ -6,5 +6,5 @@ export default function Amaze() {
 }
 
 Amaze.artname = "Amaze.";
-Amaze.frameColour = "orange";
+Amaze.frameColour = "darkorange";
 Amaze.traits = [TRAITS.ONEDIV, TRAITS.ANIMATED];

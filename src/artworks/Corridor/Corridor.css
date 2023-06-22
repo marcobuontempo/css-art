@@ -1,31 +1,39 @@
-.corridoor,
-.corridoor::before,
-.corridoor::after {
+.corridor,
+.corridor::before,
+.corridor::after {
   width: 100%;
   height: 100%;
   position: absolute;
   margin: auto;
+  cursor: pointer;
+  --wall: rgb(98, 60, 22);
+  --frame: rgb(90, 59, 27);
+  --ceiling: rgb(249, 175, 102);
+  --floor: rgb(87, 58, 32);
+  --lwall: rgb(195, 136, 78);
+  --rwall: rgb(206, 136, 66);
+
 }
 
 /* WALLS */
-.corridoor {
+.corridor {
   background:
     radial-gradient(at 60% 40%, black 0% 10%, transparent),
     conic-gradient(from -45deg at 60% 40%,
-      plum 0deg 90deg,
+      var(--ceiling) 0deg 90deg,
       black 90deg 91deg,
-      pink 91deg 184deg,
+      var(--rwall) 91deg,
       black 184deg 185deg,
-      plum 185deg 270deg,
+      var(--floor) 185deg 270deg,
       black 270deg 271deg,
-      pink 270deg 355deg,
+      var(--lwall) 355deg,
       black 355deg 356deg,
-      plum 356deg);
+      var(--ceiling) 356deg);
   overflow: hidden;
 }
 
 /* BACK WALL */
-.corridoor::before {
+.corridor::before {
   content: "";
   top: 17%;
   left: 33%;
@@ -35,14 +43,14 @@
   overflow: visible;
   border-bottom: none;
   box-shadow:
-    37px 27px indigo inset, -37px 0px indigo inset,
+    37px 27px var(--wall) inset, -37px 0px var(--wall) inset,
     40px 30px black inset, -40px 0px black inset,
-    47px 37px brown inset, -47px 0px brown inset,
+    47px 37px var(--frame) inset, -47px 0px var(--frame) inset,
     50px 40px black inset, -50px 0px black inset;
 }
 
 /* SURROUNDING FEATURES */
-.corridoor::after {
+.corridor::after {
   content: "";
   top: 0%;
   left: 30%;
@@ -53,21 +61,22 @@
   radial-gradient(ellipse 50% 50% at 58% 11%, black 6%, transparent 7% 100%),
   radial-gradient(ellipse 50% 50% at 58% 9.5%, black 6%, transparent 7% 100%),
   radial-gradient(ellipse 70% 70% at 58% 15%, yellow 1%, transparent 20% 100%);
+  animation: flicker 2s ease-out infinite alternate;
 }
 
 
-.corridoor:hover {
-  animation: corridoor-shadow 6s linear;
+.corridor:hover {
+  animation: corridor-shadow 6s linear;
 }
-.corridoor:hover::before {
+.corridor:hover::before {
   animation: wall-zoom 6s linear;
 }
-.corridoor:hover::after {
+.corridor:hover::after {
   animation: feature-zoom 6s linear;
 }
 
 
-@keyframes corridoor-shadow {
+@keyframes corridor-shadow {
   0% {
     filter: brightness(1);
   }
@@ -151,5 +160,14 @@
   100% {
     filter: opacity(1);
     transform: scale(1);
+  }
+}
+
+@keyframes flicker {
+  from {
+    filter: brightness(1);
+  }
+  to {
+    filter: brightness(0.5);
   }
 }
