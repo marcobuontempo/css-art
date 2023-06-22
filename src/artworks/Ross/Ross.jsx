@@ -2,7 +2,7 @@ import TRAITS from '../TRAITS'
 import './Ross.css'
 
 export default function Ross() {
-  return <div className='ross'>GREY ALIEN</div>
+  return <div className='ross'></div>
 }
 
 Ross.artname = "Ross.";

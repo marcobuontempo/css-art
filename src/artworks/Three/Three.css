@@ -39,7 +39,7 @@
   bottom: 0;
   background:
     /* INNER CLOUD */
-    radial-gradient(ellipse 50% 50% at 45% 29%, var(--cloud) 15%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 43% 29%, var(--cloud) 15%, transparent 0%),
     radial-gradient(ellipse 50% 50% at 50% 24%, var(--cloud) 15%, transparent 0%),
     radial-gradient(ellipse 50% 50% at 50% 28%, var(--cloud) 15%, transparent 0%),
     radial-gradient(ellipse 50% 50% at 57% 28%, var(--cloud) 15%, transparent 0%),
@@ -59,7 +59,7 @@
     radial-gradient(ellipse 50% 50% at 59% 71%, var(--cloud) 15%, transparent 0%),
     radial-gradient(ellipse 50% 50% at 43% 67%, var(--cloud) 15%, transparent 0%),
     /* BLACK OUTLINE */
-    radial-gradient(ellipse 50% 50% at 45% 29%, black 20%, transparent 0%),
+    radial-gradient(ellipse 50% 50% at 43% 29%, black 20%, transparent 0%),
     radial-gradient(ellipse 50% 50% at 50% 24%, black 20%, transparent 0%),
     radial-gradient(ellipse 50% 50% at 50% 28%, black 20%, transparent 0%),
     radial-gradient(ellipse 50% 50% at 57% 28%, black 20%, transparent 0%),

@@ -30,7 +30,7 @@
   text-align: center;
   text-shadow: none;
   color: black;
-  padding: 4px;
+  padding: 5px;
   background: 
   radial-gradient(ellipse 50% 50% at 95% 2.5%, rgba(255, 0, 0, 0.7) 3%, transparent 3%),
   radial-gradient(ellipse 50% 50% at 90% 2.5%, rgba(255, 166, 0, 0.7) 3%, transparent 3%),
@@ -38,6 +38,7 @@
   ;
 }
 
+/* PIXEL EFFECT */
 .terminal::after {
   content: "";
   left: 0;
