@@ -21,14 +21,14 @@
   --pos3: translate(calc(var(--right-edge) + 0px), calc(var(--top-edge) + 150px));
   --pos4: translate(calc(var(--left-edge) + 100px), calc(var(--top-edge) + 0px));
   --pos5: translate(calc(var(--left-edge) + 0px), calc(var(--top-edge) + 200px));
-  --pos6: translate(calc(var(--right-edge) - 100px), calc(var(--bottom-edge) + 0px));
+  --pos6: translate(calc(var(--right-edge) - 70px), calc(var(--bottom-edge) + 0px));
   --pos7: translate(calc(var(--right-edge) + 0px), calc(var(--bottom-edge) - 90px));
-  --pos8: translate(calc(var(--left-edge) + 100px), calc(var(--top-edge) + 0px));
+  --pos8: translate(calc(var(--left-edge) + 210px), calc(var(--top-edge) + 0px));
   --pos9: translate(calc(var(--left-edge) + 0px), calc(var(--bottom-edge) - 30px));
   --pos10: translate(calc(var(--left-edge) + 30px), calc(var(--bottom-edge) + 0px));
   --pos11: translate(calc(var(--right-edge) + 0px), calc(var(--top-edge) + 20px));
   --pos12: translate(calc(var(--right-edge) - 10px), calc(var(--top-edge) + 0px));
-  --pos13: translate(calc(var(--left-edge) + 130px), calc(var(--bottom-edge) + 0px));
+  --pos13: translate(calc(var(--left-edge) + 180px), calc(var(--bottom-edge) + 0px));
   --pos14: translate(calc(var(--left-edge) + 25px), calc(var(--top-edge) + 0px));
 }
 
