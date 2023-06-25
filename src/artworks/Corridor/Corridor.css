@@ -66,13 +66,13 @@
 
 
 .corridor:hover {
-  animation: corridor-shadow 6s linear;
+  animation: corridor-shadow 4s linear;
 }
 .corridor:hover::before {
-  animation: wall-zoom 6s linear;
+  animation: wall-zoom 4s linear;
 }
 .corridor:hover::after {
-  animation: feature-zoom 6s linear;
+  animation: feature-zoom 4s linear;
 }
 
 
