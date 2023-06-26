@@ -2,7 +2,7 @@ import TRAITS from '../TRAITS'
 import './AvoPear.css'
 
 export default function AvoPear() {
-  return <div className='avopear'>AVOCADO TURNING INTO PEAR</div>
+  return <div className='avopear'></div>
 }
 
 AvoPear.artname = "AvoPear.";

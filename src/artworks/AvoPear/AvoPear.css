@@ -5,8 +5,121 @@
   height: 100%;
   position: absolute;
   margin: auto;
+  --bg: silver;
+  --avo-inner: rgb(179, 236, 87);
+  --avo-outer: rgb(59, 199, 59);
+  --avo-skin: darkgreen;
+  --avo-seed: sienna;
+
+  --pear-outline: saddlebrown;
+  --pear-skin: rgb(120, 220, 48);
 }
 
 .avopear {
-  background: white;
+  background: var(--bg);
+}
+
+.avopear::before {
+  content: "";
+  background:
+    /* CHEEKS */
+    radial-gradient(ellipse 100% 100% at 40% 48%, rgba(255, 192, 203, 0.75) 1%, transparent 4%),
+    radial-gradient(ellipse 100% 100% at 60% 48%, rgba(255, 192, 203, 0.75) 1%, transparent 4%),
+
+    /* EYES */
+    radial-gradient(ellipse 100% 100% at 44.5% 41.5%, white 0.5%, transparent 0%),
+    radial-gradient(ellipse 100% 100% at 54.5% 41.5%, white 0.5%, transparent 0%),
+    radial-gradient(ellipse 80% 100% at 45% 42.5%, black 2%, transparent 0%),
+    radial-gradient(ellipse 80% 100% at 55% 42.5%, black 2%, transparent 0%),
+
+    /* MOUTH */
+    radial-gradient(ellipse 100% 100% at 50% 46%, var(--avo-inner) 3%, transparent 0%),
+    radial-gradient(ellipse 100% 80% at 50% 47%, black 3%, transparent 0%),
+
+    /* SEED */
+    radial-gradient(ellipse 100% 100% at 49% 66%, rgba(255, 255, 255, 0.15) 12.5%, transparent 0%),
+    radial-gradient(ellipse 100% 100% at 50% 67.5%, var(--avo-seed) 15%, transparent 0%),
+
+    /* INNER */
+    radial-gradient(ellipse 90% 100% at 50% 60%, var(--avo-inner) 25%, transparent 0%),
+    radial-gradient(ellipse 60% 100% at 50% 52.5%, var(--avo-inner) 30%, transparent 0%),
+
+    /* OUTER */
+    radial-gradient(ellipse 90% 100% at 50% 60%, var(--avo-outer) 27%, transparent 0%),
+    radial-gradient(ellipse 60% 100% at 50% 52.5%, var(--avo-outer) 32%, transparent 0%),
+
+    /* OUTLINE */
+    radial-gradient(ellipse 90% 100% at 50% 60%, black 28%, transparent 0%),
+    radial-gradient(ellipse 60% 100% at 50% 52.5%, black 33%, transparent 0%),
+
+    /* EDGES MASK */
+    linear-gradient(to right, var(--bg) 50%, transparent 50%),
+    linear-gradient(to bottom, var(--bg) 19.5%, transparent 19.5% 88%, var(--bg) 88%),
+
+    /* SKIN */
+    radial-gradient(ellipse 100% 90% at 42% 45%, var(--avo-skin) 29%, black 29% 30%, transparent 0%),
+    radial-gradient(ellipse 100% 90% at 45.5% 60.5%, var(--avo-skin) 30.5%, black 30.5% 31.5%, transparent 0%);
+
+  animation: avopear-swap 5s linear alternate infinite;
+
+}
+
+
+.avopear::after {
+  content: "";
+  background:
+    /* CHEEKS */
+    radial-gradient(ellipse 100% 100% at 40% 48%, rgba(255, 192, 203, 0.75) 1%, transparent 4%),
+    radial-gradient(ellipse 100% 100% at 60% 48%, rgba(255, 192, 203, 0.75) 1%, transparent 4%),
+
+    /* EYES */
+    radial-gradient(ellipse 100% 100% at 45.5% 41.5%, white 0.5%, transparent 0%),
+    radial-gradient(ellipse 100% 100% at 55.5% 41.5%, white 0.5%, transparent 0%),
+    radial-gradient(ellipse 80% 100% at 45% 42.5%, black 2%, transparent 0%),
+    radial-gradient(ellipse 80% 100% at 55% 42.5%, black 2%, transparent 0%),
+
+    /* MOUTH */
+    radial-gradient(ellipse 100% 100% at 50% 46%, var(--pear-skin) 3%, transparent 0%),
+    radial-gradient(ellipse 100% 80% at 50% 47%, black 3%, transparent 0%),
+
+    /* STEM */
+    radial-gradient(ellipse 100% 10% at 53% 15%, var(--pear-outline) 3%, transparent 0%),
+    radial-gradient(ellipse 100% 30% at 56% 15%, var(--avo-inner) 6%, transparent 0%),
+    radial-gradient(ellipse 100% 30% at 56% 15%, var(--pear-outline) 7%, transparent 0%),
+    radial-gradient(ellipse 20% 100% at 50% 18.5%, var(--pear-outline) 7%, transparent 0%),
+    radial-gradient(ellipse 100% 80% at 50% 23%, var(--pear-skin) 3%, transparent 0%),
+    radial-gradient(ellipse 100% 80% at 50% 23.5%, black 3%, transparent 0%),
+
+    /* SHINE */
+    radial-gradient(ellipse 100% 100% at 39% 68%, rgba(255, 255, 255, 0.2) 9%, transparent 0%),
+    radial-gradient(ellipse 30% 100% at 70% 60%, rgba(255, 255, 255, 0.2) 8%, transparent 0%),
+    radial-gradient(ellipse 30% 30% at 67.5% 72.5%, rgba(255, 255, 255, 0.2) 8%, transparent 0%),
+
+    /* INNER */
+    radial-gradient(ellipse 90% 100% at 50% 60%, var(--pear-skin) 27%, transparent 0%),
+    radial-gradient(ellipse 60% 100% at 50% 52.5%, var(--pear-skin) 32%, transparent 0%),
+
+    /* OUTLINE */
+    radial-gradient(ellipse 90% 100% at 50% 60%, var(--pear-outline) 28%, transparent 0%),
+    radial-gradient(ellipse 60% 100% at 50% 52.5%, var(--pear-outline) 33%, transparent 0%);
+
+  animation: avopear-swap 5s linear alternate-reverse infinite;
+}
+
+@keyframes avopear-swap {
+  0% {
+    transform: scaleX(1);
+  }
+
+  20% {
+    transform: scaleX(1);
+  }
+
+  50% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
 }
