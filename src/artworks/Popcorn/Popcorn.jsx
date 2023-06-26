@@ -2,7 +2,7 @@ import TRAITS from '../TRAITS'
 import './Popcorn.css'
 
 export default function Popcorn() {
-  return <div className='popcorn'>POPCORN</div>
+  return <div className='popcorn'></div>
 }
 
 Popcorn.artname = "Popcorn.";

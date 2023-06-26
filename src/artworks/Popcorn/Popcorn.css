@@ -5,8 +5,159 @@
   height: 100%;
   position: absolute;
   margin: auto;
+  --inner: rgb(255, 235, 0);
+  --outer: rgb(255, 255, 0);
+  --box: rgb(230, 0, 0);
 }
 
 .popcorn {
-  background: white;
+  background:
+  radial-gradient(ellipse 75% 75% at 50% 52.5%, rgba(255, 255, 0, 0.6) 0%, transparent 75%),
+  linear-gradient(to bottom, rgb(88, 88, 88) 75%, black 68% 72%, rgb(0, 60, 0) 75%);
+}
+
+/* POPCORN */
+.popcorn::before {
+  content: "";
+  width: 5%;
+  height: 5%;
+  left: 0;
+  right: 30%;
+  top: 0;
+  bottom: 29%;
+  border-radius: 50%;
+  background: var(--inner);
+  box-shadow:
+    /* MAIN TOP */
+    5px -5px 0px -2px var(--inner),
+    6px -1px 0px -2px var(--inner),
+    0px 0px 0px 2px var(--outer),
+    5px -5px 0px 0px var(--outer),
+    6px -1px 0px 0px var(--outer),
+    
+    15px -10px 0px 0px var(--inner),
+    15px -15px 0px -2px var(--inner),
+    20px -11px 0px -2px var(--inner),
+    15px -10px 0px 2px var(--outer),
+    15px -15px 0px 0px var(--outer),
+    20px -11px 0px 0px var(--outer),
+
+    85px -15px 0px 0px var(--inner),
+    80px -20px 0px -2px var(--inner),
+    92px -18px 0px -2px var(--inner),
+    85px -15px 0px 2px var(--outer),
+    80px -20px 0px 0px var(--outer),
+    92px -18px 0px 0px var(--outer),
+
+    45px 0px 0px 0px var(--inner),
+    40px 1px 0px -2px var(--inner),
+    50px 2px 0px -2px var(--inner),
+    45px 0px 0px 2px var(--outer),
+    40px 1px 0px 0px var(--outer),
+    50px 2px 0px 0px var(--outer),
+
+    100px -5px 0px 0px var(--inner),
+    108px 2px 0px -2px var(--inner),
+    98px 5px 0px -2px var(--inner),
+    100px -5px 0px 2px var(--outer),
+    108px 2px 0px 0px var(--outer),
+    98px 5px 0px 0px var(--outer),
+    
+    65px 0px 0px 0px var(--inner),
+    60px -5px 0px -2px var(--inner),
+    70px -5px 0px -2px var(--inner),
+    65px 0px 0px 2px var(--outer),
+    60px -5px 0px 0px var(--outer),
+    70px -5px 0px 0px var(--outer),
+
+    80px 0px 0px 0px var(--inner),
+    90px 2px 0px -2px var(--inner),
+    80px -5px 0px -2px var(--inner),
+    80px 0px 0px 2px var(--outer),
+    90px 2px 0px 0px var(--outer),
+    80px -5px 0px 0px var(--outer),
+
+    25px -5px 0px 0px var(--inner),
+    20px -1px 0px -2px var(--inner),
+    28px 0px 0px -2px var(--inner),
+    25px -5px 0px 2px var(--outer),
+    20px -1px 0px 0px var(--outer),
+    28px 0px 0px 0px var(--outer),
+
+    30px -15px 0px 0px var(--inner),
+    27px -18px 0px -2px var(--inner),
+    38px -10px 0px -2px var(--inner),
+    30px -15px 0px 2px var(--outer),
+    27px -18px 0px 0px var(--outer),
+    38px -10px 0px 0px var(--outer),
+
+    60px -20px 0px 0px var(--inner),
+    55px -25px 0px -2px var(--inner),
+    55px -16px 0px -2px var(--inner),
+    60px -20px 0px 2px var(--outer),
+    55px -25px 0px 0px var(--outer),
+    55px -16px 0px 0px var(--outer),
+
+    76px -17px 0px 0px var(--inner),
+    75px -22px 0px -2px var(--inner),
+    73px -20px 0px -2px var(--inner),
+    76px -17px 0px 2px var(--outer),
+    75px -22px 0px 0px var(--outer),
+    73px -20px 0px 0px var(--outer),
+
+    40px -22px 0px 0px var(--inner),
+    38px -20px 0px -2px var(--inner),
+    40px -25px 0px -2px var(--inner),
+    40px -22px 0px 2px var(--outer),
+    38px -20px 0px 0px var(--outer),
+    40px -25px 0px 0px var(--outer),
+
+    130px 180px 0px 0px var(--inner),
+    135px 175px 0px -2px var(--inner),
+    133px 185px 0px -2px var(--inner),
+    130px 180px 0px 2px var(--outer),
+    135px 175px 0px 0px var(--outer),
+    133px 185px 0px 0px var(--outer),
+
+    180px 160px 0px 0px var(--inner),
+    175px 165px 0px -2px var(--inner),
+    175px 158px 0px -2px var(--inner),
+    180px 160px 0px 2px var(--outer),
+    175px 165px 0px 0px var(--outer),
+    175px 158px 0px 0px var(--outer),
+
+    170px 200px 0px 0px var(--inner),
+    175px 195px 0px -2px var(--inner),
+    168px 195px 0px -2px var(--inner),
+    170px 200px 0px 2px var(--outer),
+    175px 195px 0px 0px var(--outer),
+    168px 195px 0px 0px var(--outer),
+
+    -30px 200px 0px 0px var(--inner),
+    -38px 195px 0px -2px var(--inner),
+    -32px 192px 0px -2px var(--inner),
+    -30px 200px 0px 2px var(--outer),
+    -38px 195px 0px 0px var(--outer),
+    -32px 192px 0px 0px var(--outer),
+
+    53px 30px 0px 40px var(--outer)
+    ;
+}
+
+/* BOX */
+.popcorn::after {
+  content: "";
+  width: 30%;
+  height: 41%;
+  left: 0;
+  right: 0;
+  top: 16%;
+  bottom: 0;
+  border-radius: 3px;
+  background:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0% 1%, transparent 10%),
+    linear-gradient(85deg, transparent 0% 10%, var(--box) 10% 25%, white 26% 34%, var(--box) 35% 45%, transparent 45%),
+    linear-gradient(-85deg, transparent 0% 10%, var(--box) 10% 25%, white 26% 34%, var(--box) 35% 45%, transparent 45%),
+    linear-gradient(to right, transparent 30%, var(--box) 30% 70%, transparent 70%)
+    ;
 }
