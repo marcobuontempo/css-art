@@ -1,5 +1,5 @@
 /* Parent Component -- NO Modification needed */
-export default function Artwork({ children }) { return <>{children}</> }
+export default function Artworks({ children }) { return <>{children}</> }
 
 
 /* 1. Import Artworks */
@@ -24,27 +24,29 @@ import Harold from "./Harold/Harold";
 import Teabag from "./Teabag/Teabag";
 import Rego from "./Rego/Rego";
 import Popcorn from "./Popcorn/Popcorn";
+import NotATeapot from "./NotATeapot/NotATeapot";
 
 
 /* 2. Add Artwork as property */
-Artwork.Popcorn = Popcorn;
-Artwork.Rego = Rego;
-Artwork.Teabag = Teabag;
-Artwork.Harold = Harold;
-Artwork.Almost = Almost;
-Artwork.Pong = Pong;
-Artwork.GreatWave = GreatWave;
-Artwork.Terminal = Terminal;
-Artwork.Ross = Ross;
-Artwork.StickyBanana = StickyBanana;
-Artwork.Tear = Tear;
-Artwork.Amaze = Amaze;
-Artwork.AvoPear = AvoPear;
-Artwork.Three = Three;
-Artwork.Corridor = Corridor;
-Artwork.Scenic = Scenic;
-Artwork.Heart = Heart;
-Artwork.Grimmace = Grimmace;
-Artwork.Orbit = Orbit;
-Artwork.Citrus = Citrus;
-Artwork.Rook = Rook;
+Artworks.NotATeapot = NotATeapot;
+Artworks.Popcorn = Popcorn;
+Artworks.Rego = Rego;
+Artworks.Teabag = Teabag;
+Artworks.Harold = Harold;
+Artworks.Almost = Almost;
+Artworks.Pong = Pong;
+Artworks.GreatWave = GreatWave;
+Artworks.Terminal = Terminal;
+Artworks.Ross = Ross;
+Artworks.StickyBanana = StickyBanana;
+Artworks.Tear = Tear;
+Artworks.Amaze = Amaze;
+Artworks.AvoPear = AvoPear;
+Artworks.Three = Three;
+Artworks.Corridor = Corridor;
+Artworks.Scenic = Scenic;
+Artworks.Heart = Heart;
+Artworks.Grimmace = Grimmace;
+Artworks.Orbit = Orbit;
+Artworks.Citrus = Citrus;
+Artworks.Rook = Rook;

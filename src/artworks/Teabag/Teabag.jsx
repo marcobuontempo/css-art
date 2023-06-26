@@ -2,7 +2,7 @@ import TRAITS from '../TRAITS'
 import './Teabag.css'
 
 export default function Teabag() {
-  return <div className='teabag'>TEA BAG</div>
+  return <div className='teabag'></div>
 }
 
 Teabag.artname = "Teabag.";

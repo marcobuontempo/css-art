@@ -10,3 +10,11 @@
 .teabag {
   background: white;
 }
+
+.teabag::before {
+
+}
+
+.teabag::after {
+
+}

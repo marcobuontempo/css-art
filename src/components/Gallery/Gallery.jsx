@@ -2,7 +2,7 @@ import "./Gallery.css";
 import ArtFrame from "../ArtFrame/ArtFrame";
 
 // Use '../../artworks/Artwork.jsx' to import/export all art
-import Art from "../../artworks/Artwork";
+import ArtworksList from "../../artworks/ArtworksList";
 import TRAITS from "../../artworks/TRAITS";
 
 export default function Gallery({ traitFilters }) {
@@ -13,8 +13,8 @@ export default function Gallery({ traitFilters }) {
 
   return (
     <main className="gallery">
-      {Object.keys(Art).map((k) => {
-        const Artwork = Art[k];
+      {Object.keys(ArtworksList).map((k) => {
+        const Artwork = ArtworksList[k];
 
         if (isArtworkInFilter(Artwork.traits)) {
           return (
