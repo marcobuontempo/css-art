@@ -24,13 +24,13 @@ import Harold from "./Harold/Harold";
 import Teabag from "./Teabag/Teabag";
 import Rego from "./Rego/Rego";
 import Popcorn from "./Popcorn/Popcorn";
-import NotATeapot from "./NotATeapot/NotATeapot";
+import ImATeapot from "./ImATeapot/ImATeapot";
 import Circles from "./Circles/Circles";
 
 
 /* 2. Add Artwork as property */
 Artworks.Circles = Circles;
-Artworks.NotATeapot = NotATeapot;
+Artworks.ImATeapot = ImATeapot;
 Artworks.Popcorn = Popcorn;
 Artworks.Rego = Rego;
 Artworks.Teabag = Teabag;
