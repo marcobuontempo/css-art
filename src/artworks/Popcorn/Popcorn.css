@@ -10,10 +10,11 @@
   --box: rgb(230, 0, 0);
 }
 
+/* BACKGROUND */
 .popcorn {
   background:
-  radial-gradient(ellipse 75% 75% at 50% 52.5%, rgba(255, 255, 0, 0.6) 0%, transparent 75%),
-  linear-gradient(to bottom, rgb(88, 88, 88) 75%, black 68% 72%, rgb(0, 60, 0) 75%);
+    radial-gradient(ellipse 75% 75% at 50% 52.5%, rgba(255, 255, 0, 0.6) 0%, transparent 75%),
+    linear-gradient(to bottom, rgb(88, 88, 88) 75%, black 68% 72%, rgb(0, 60, 0) 75%);
 }
 
 /* POPCORN */
@@ -34,7 +35,7 @@
     0px 0px 0px 2px var(--outer),
     5px -5px 0px 0px var(--outer),
     6px -1px 0px 0px var(--outer),
-    
+
     15px -10px 0px 0px var(--inner),
     15px -15px 0px -2px var(--inner),
     20px -11px 0px -2px var(--inner),
@@ -62,7 +63,7 @@
     100px -5px 0px 2px var(--outer),
     108px 2px 0px 0px var(--outer),
     98px 5px 0px 0px var(--outer),
-    
+
     65px 0px 0px 0px var(--inner),
     60px -5px 0px -2px var(--inner),
     70px -5px 0px -2px var(--inner),
@@ -140,8 +141,7 @@
     -38px 195px 0px 0px var(--outer),
     -32px 192px 0px 0px var(--outer),
 
-    53px 30px 0px 40px var(--outer)
-    ;
+    53px 30px 0px 40px var(--outer);
 }
 
 /* BOX */
@@ -155,9 +155,17 @@
   bottom: 0;
   border-radius: 3px;
   background:
-  linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0% 1%, transparent 10%),
+    /* EYES */
+    radial-gradient(ellipse 18% 12% at 59% 33%, var(--box) 30%, transparent 30%),
+    radial-gradient(ellipse 18% 12% at 39% 33%, var(--box) 30%, transparent 30%),
+    radial-gradient(ellipse 10% 10% at 40% 30%, black 50%, transparent 50%),
+    radial-gradient(ellipse 10% 10% at 60% 30%, black 50%, transparent 50%),
+    /* MOUTH */
+    radial-gradient(ellipse 20% 10% at 50% 43%, var(--box) 50%, transparent 50%),
+    radial-gradient(ellipse 15% 10% at 52% 45%, black 50%, transparent 50%),
+    /* BOX */
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0% 1%, transparent 10%),
     linear-gradient(85deg, transparent 0% 10%, var(--box) 10% 25%, white 26% 34%, var(--box) 35% 45%, transparent 45%),
     linear-gradient(-85deg, transparent 0% 10%, var(--box) 10% 25%, white 26% 34%, var(--box) 35% 45%, transparent 45%),
-    linear-gradient(to right, transparent 30%, var(--box) 30% 70%, transparent 70%)
-    ;
+    linear-gradient(to right, transparent 30%, var(--box) 30% 70%, transparent 70%);
 }
