@@ -7,4 +7,4 @@ export default function Circles() {
 
 Circles.artname = "Circles.";
 Circles.frameColour = "pink";
-Circles.traits = [TRAITS.ONEDIV];
+Circles.traits = [TRAITS.ONEDIV, TRAITS.ANIMATED];

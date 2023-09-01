@@ -10,7 +10,7 @@ import Rook from "./Rook/Rook";
 import Heart from "./Heart/Heart";
 import Scenic from "./Scenic/Scenic";
 import Corridor from "./Corridor/Corridor";
-import Three from "./Three/Three";
+import Three from "./Tres/Tres";
 import AvoPear from "./AvoPear/AvoPear";
 import Ross from "./Ross/Ross";
 import StickyBanana from "./StickyBanana/StickyBanana";
@@ -26,12 +26,19 @@ import Rego from "./Rego/Rego";
 import Popcorn from "./Popcorn/Popcorn";
 import ImATeapot from "./ImATeapot/ImATeapot";
 import Circles from "./Circles/Circles";
+import Corno from "./Corno/Corno";
+import Shaker from "./Shaker/Shaker";
+import Dumbbell from "./Dumbbell/Dumbbell";
+import Shroom from "./Shroom/Shroom";
+import Trapped from "./Trapped/Trapped";
+import NoSignal from "./NoSignal/NoSignal";
 
 
 /* 2. Add Artwork as property */
 Artworks.Circles = Circles;
 Artworks.ImATeapot = ImATeapot;
 Artworks.Popcorn = Popcorn;
+Artworks.Corno = Corno;
 Artworks.Rego = Rego;
 Artworks.Teabag = Teabag;
 Artworks.Harold = Harold;
@@ -52,3 +59,8 @@ Artworks.Grimmace = Grimmace;
 Artworks.Orbit = Orbit;
 Artworks.Citrus = Citrus;
 Artworks.Rook = Rook;
+Artworks.Shaker = Shaker;
+Artworks.Dumbbell = Dumbbell;
+Artworks.Shroom = Shroom;
+Artworks.Trapped = Trapped;
+Artworks.NoSignal = NoSignal;

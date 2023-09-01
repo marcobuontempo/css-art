@@ -1,18 +1,18 @@
-.harold,
-.harold::before,
-.harold::after {
+.dumbbell,
+.dumbbell::before,
+.dumbbell::after {
   width: 100%;
   height: 100%;
   position: absolute;
   margin: auto;
 }
 
-.harold {
+.dumbbell {
   max-height: 400px;
   background: white;
   resize: vertical;
 }
 
-.harold::before {
+.dumbbell::before {
   content: "";
 }

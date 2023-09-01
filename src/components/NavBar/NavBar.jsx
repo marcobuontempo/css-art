@@ -24,6 +24,12 @@ export default function NavBar({ traitFilters, setTraitFilters }) {
         }
         )}
       </ul>
+      TODO: <br/>
+      - CSS ANIMATION TOGGLE <br/>
+      - FIX TRAIT BADGES TO ALL BE CIRCULAR (AND TRANSPARENT WHERE REQUIRED) <br/>
+      - HAVE EACH TRAIT BADGE DISPLAY INFO ON HOVER <br/>
+      - VIEW SOURCE FOR EACH ARTWORK .. OPENS GITHUB CSS SOURCE CODE <br/>
+      - WORDART STYLE &quot;COOL&quot; &quot;WOW&QUOT; IN BANNER <br/>
     </nav>
   );
 }

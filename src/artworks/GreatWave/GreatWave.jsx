@@ -7,4 +7,4 @@ export default function GreatWave() {
 
 GreatWave.artname = "Great Wave.";
 GreatWave.frameColour = "darkblue";
-GreatWave.traits = [TRAITS.ONEDIV];
+GreatWave.traits = [TRAITS.ONEDIV, TRAITS.PIXELART, TRAITS.ANIMATED];

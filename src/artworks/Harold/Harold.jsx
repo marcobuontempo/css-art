@@ -2,7 +2,7 @@ import TRAITS from '../TRAITS'
 import './Harold.css'
 
 export default function Harold() {
-  return <div className='harold'>GIRAFFE</div>
+  return <div className='harold'>GIRAFFE RESIZEABLE NECK</div>
 }
 
 Harold.artname = "Harold.";

@@ -7,4 +7,4 @@ export default function AvoPear() {
 
 AvoPear.artname = "AvoPear.";
 AvoPear.frameColour = "limegreen";
-AvoPear.traits = [TRAITS.ONEDIV];
+AvoPear.traits = [TRAITS.ONEDIV, TRAITS.ANIMATED];
