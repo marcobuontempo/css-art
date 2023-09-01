@@ -56,7 +56,7 @@
 
 @keyframes tres-bounce {
   from {
-    top: 0;
+    top: -40%;
   }
 
   to {
@@ -77,11 +77,11 @@
 @keyframes shadow-size {
   from {
     opacity: 0.4;
-    transform: scale(1.1, 0.4);
+    transform: scale(1.05, 0.4);
   }
 
   to {
     opacity: 1;
-    transform: scale(1.05, 0.45);
+    transform: scale(1.25, 0.5);
   }
 }
