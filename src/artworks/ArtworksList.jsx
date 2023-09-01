@@ -32,6 +32,7 @@ import Dumbbell from "./Dumbbell/Dumbbell";
 import Shroom from "./Shroom/Shroom";
 import Trapped from "./Trapped/Trapped";
 import NoSignal from "./NoSignal/NoSignal";
+import Freddy from "./Freddy/Freddy";
 
 
 /* 2. Add Artwork as property */
@@ -64,3 +65,4 @@ Artworks.Dumbbell = Dumbbell;
 Artworks.Shroom = Shroom;
 Artworks.Trapped = Trapped;
 Artworks.NoSignal = NoSignal;
+Artworks.Freddy = Freddy;
