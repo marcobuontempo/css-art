@@ -1,18 +1,18 @@
 import "./Gallery.css";
 import ArtFrame from "../ArtFrame/ArtFrame";
 
-// Use '../../artworks/Artwork.jsx' to import/export all art
+// Use '../../artworks/ArtworksList.jsx' to import/export all art
 import ArtworksList from "../../artworks/ArtworksList";
 import TRAITS from "../../artworks/TRAITS";
 
-export default function Gallery({ traitFilters }) {
+export default function Gallery({ traitFilters, cssAnimationsOn }) {
 
   const isArtworkInFilter = (artworkTraits) => {
     return traitFilters.every(key => artworkTraits.includes(TRAITS[key]))
   } 
 
   return (
-    <main className="gallery">
+    <main className={"gallery" + (cssAnimationsOn ? "" : " disable-animations")}>
       {Object.keys(ArtworksList).map((k) => {
         const Artwork = ArtworksList[k];
 

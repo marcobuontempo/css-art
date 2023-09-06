@@ -1,5 +1,5 @@
 /* Parent Component -- NO Modification needed */
-export default function Artworks({ children }) { return <>{children}</> }
+export default function ArtworksList({ children }) { return <>{children}</> }
 
 
 /* 1. Import Artworks */
@@ -36,33 +36,33 @@ import Freddy from "./Freddy/Freddy";
 
 
 /* 2. Add Artwork as property */
-Artworks.Circles = Circles;
-Artworks.ImATeapot = ImATeapot;
-Artworks.Popcorn = Popcorn;
-Artworks.Corno = Corno;
-Artworks.Rego = Rego;
-Artworks.Teabag = Teabag;
-Artworks.Harold = Harold;
-Artworks.Almost = Almost;
-Artworks.Pong = Pong;
-Artworks.GreatWave = GreatWave;
-Artworks.Terminal = Terminal;
-Artworks.Ross = Ross;
-Artworks.StickyBanana = StickyBanana;
-Artworks.Tear = Tear;
-Artworks.Amaze = Amaze;
-Artworks.AvoPear = AvoPear;
-Artworks.TresComas = TresComas;
-Artworks.Corridor = Corridor;
-Artworks.Scenic = Scenic;
-Artworks.Heart = Heart;
-Artworks.Grimmace = Grimmace;
-Artworks.Orbit = Orbit;
-Artworks.Citrus = Citrus;
-Artworks.Rook = Rook;
-Artworks.Shaker = Shaker;
-Artworks.Barbell = Barbell;
-Artworks.Shroom = Shroom;
-Artworks.Trapped = Trapped;
-Artworks.NoSignal = NoSignal;
-Artworks.Freddy = Freddy;
+ArtworksList.Circles = Circles;
+ArtworksList.ImATeapot = ImATeapot;
+ArtworksList.Popcorn = Popcorn;
+ArtworksList.Corno = Corno;
+ArtworksList.Rego = Rego;
+ArtworksList.Teabag = Teabag;
+ArtworksList.Harold = Harold;
+ArtworksList.Almost = Almost;
+ArtworksList.Pong = Pong;
+ArtworksList.GreatWave = GreatWave;
+ArtworksList.Terminal = Terminal;
+ArtworksList.Ross = Ross;
+ArtworksList.StickyBanana = StickyBanana;
+ArtworksList.Tear = Tear;
+ArtworksList.Amaze = Amaze;
+ArtworksList.AvoPear = AvoPear;
+ArtworksList.TresComas = TresComas;
+ArtworksList.Corridor = Corridor;
+ArtworksList.Scenic = Scenic;
+ArtworksList.Heart = Heart;
+ArtworksList.Grimmace = Grimmace;
+ArtworksList.Orbit = Orbit;
+ArtworksList.Citrus = Citrus;
+ArtworksList.Rook = Rook;
+ArtworksList.Shaker = Shaker;
+ArtworksList.Barbell = Barbell;
+ArtworksList.Shroom = Shroom;
+ArtworksList.Trapped = Trapped;
+ArtworksList.NoSignal = NoSignal;
+ArtworksList.Freddy = Freddy;

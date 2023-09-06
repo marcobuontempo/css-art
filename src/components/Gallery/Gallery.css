@@ -7,3 +7,9 @@
     flex-wrap: wrap;
     background-color: cornsilk;
 }
+
+.gallery.disable-animations *, 
+.gallery.disable-animations *::before, 
+.gallery.disable-animations *::after {
+    animation: 0s !important;
+}

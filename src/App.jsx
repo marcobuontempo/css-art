@@ -5,11 +5,12 @@ import NavBar from './components/NavBar/NavBar'
 
 function App() {
   const [traitFilters, setTraitFilters] = useState([])
+  const [cssAnimationsOn, setCssAnimationsOn] = useState(true);
 
   return (
     <>
-      <NavBar traitFilters={traitFilters} setTraitFilters={setTraitFilters} />
-      <Gallery traitFilters={traitFilters} />
+      <NavBar traitFilters={traitFilters} setTraitFilters={setTraitFilters} cssAnimationsOn={cssAnimationsOn} setCssAnimationsOn={setCssAnimationsOn} />
+      <Gallery traitFilters={traitFilters} cssAnimationsOn={cssAnimationsOn} />
     </>
   )
 }
