@@ -1,5 +1,5 @@
 import "./Orbit.css";
-import TRAITS from "../TRAITS";
+import TRAITS from "../../components/ArtworksList/TRAITS";
 
 export default function Orbit() {
   return <div className="orbit"></div>;

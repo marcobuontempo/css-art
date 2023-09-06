@@ -1,5 +1,5 @@
 import './Heart.css';
-import TRAITS from '../TRAITS';
+import TRAITS from '../../components/ArtworksList/TRAITS';
 
 export default function Heart() {
   return <input type="checkbox" className='heart'></input>;

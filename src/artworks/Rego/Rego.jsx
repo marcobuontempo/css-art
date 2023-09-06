@@ -1,4 +1,4 @@
-import TRAITS from '../TRAITS'
+import TRAITS from '../../components/ArtworksList/TRAITS'
 import './Rego.css'
 
 export default function Rego() {

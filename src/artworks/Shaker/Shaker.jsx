@@ -1,4 +1,4 @@
-import TRAITS from '../TRAITS'
+import TRAITS from '../../components/ArtworksList/TRAITS'
 import './Shaker.css'
 
 export default function Shaker() {

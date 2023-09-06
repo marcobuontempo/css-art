@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import TRAITS from '../../artworks/TRAITS'
+import TRAITS from '../ArtworksList/TRAITS'
 
 export default function NavBar({ traitFilters, setTraitFilters, cssAnimationsOn, setCssAnimationsOn }) {
   const toggleTrait = (trait) => {

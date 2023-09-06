@@ -1,5 +1,5 @@
 import "./Grimmace.css";
-import TRAITS from "../TRAITS";
+import TRAITS from "../../components/ArtworksList/TRAITS";
 
 export default function Grimmace() {
   return <div className="grimmace"></div>;

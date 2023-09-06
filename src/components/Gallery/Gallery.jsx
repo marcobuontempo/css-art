@@ -2,8 +2,8 @@ import "./Gallery.css";
 import ArtFrame from "../ArtFrame/ArtFrame";
 
 // Use '../../artworks/ArtworksList.jsx' to import/export all art
-import ArtworksList from "../../artworks/ArtworksList";
-import TRAITS from "../../artworks/TRAITS";
+import ArtworksList from "../ArtworksList/ArtworksList";
+import TRAITS from "../ArtworksList/TRAITS";
 
 export default function Gallery({ traitFilters, cssAnimationsOn }) {
 

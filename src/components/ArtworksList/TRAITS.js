@@ -1,7 +1,7 @@
-import ONEDIV_ICON from "../trait-badges/ONEDIV.png";
-import ANIMATED_ICON from "../trait-badges/ANIMATED.png";
-import PIXELART_ICON from "../trait-badges/PIXELART.png";
-import INTERACTIVE_ICON from "../trait-badges/INTERACTIVE.png";
+import ONEDIV_ICON from "../../../public/images/trait-badges/ONEDIV.png";
+import ANIMATED_ICON from "../../../public/images/trait-badges/ANIMATED.png";
+import PIXELART_ICON from "../../../public/images/trait-badges/PIXELART.png";
+import INTERACTIVE_ICON from "../../../public/images/trait-badges/INTERACTIVE.png";
 
 export default {
     ONEDIV: {
