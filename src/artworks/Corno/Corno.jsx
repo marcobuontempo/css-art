@@ -2,9 +2,9 @@ import TRAITS from '../TRAITS'
 import './Corno.css'
 
 export default function Corno() {
-  return <div className='corno'>RED HORN</div>
+  return <div className='corno'></div>
 }
 
 Corno.artname = "Corno.";
-Corno.frameColour = "red";
+Corno.frameColour = "crimson";
 Corno.traits = [TRAITS.ONEDIV];
