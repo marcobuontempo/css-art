@@ -1,7 +1,7 @@
 import "./Gallery.css";
 import ArtFrame from "../ArtFrame/ArtFrame";
 
-// Use '../../artworks/ArtworksList.jsx' to import/export all art
+// Use '../ArtworksList/ArtworksList.jsx' to import/export all art
 import ArtworksList from "../ArtworksList/ArtworksList";
 import TRAITS from "../ArtworksList/TRAITS";
 
