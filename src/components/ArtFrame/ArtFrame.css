@@ -25,8 +25,7 @@
 }
 
 .artframe__name {
-  color: var(--frame-colour);
-  filter: invert(1) grayscale(1);
+  white-space: nowrap;
 }
 
 .artframe__traits {
@@ -63,7 +62,7 @@
   width: var(--art-size);
   top: 100%;
   left: 50%;
-  margin-left: -200px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  margin-left: calc(var(--art-size) / -2);
 }
 
 .artframe__trait:hover .artframe__trait-tooltip {
