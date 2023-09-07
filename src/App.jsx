@@ -13,9 +13,9 @@ function App() {
 
   return (
     <>
-      <Modal visible={modalVisible} setVisible={setModalVisible} content={modalInfo.content} contentType={modalInfo.type} />
+      <Modal visible={modalVisible} setVisible={setModalVisible} isArtwork={modalInfo.isArtwork} Artwork={modalInfo.content}></Modal>
       <NavBar traitFilters={traitFilters} setTraitFilters={setTraitFilters} cssAnimationsOn={cssAnimationsOn} setCssAnimationsOn={setCssAnimationsOn} />
-      <Gallery traitFilters={traitFilters} cssAnimationsOn={cssAnimationsOn} />
+      <Gallery traitFilters={traitFilters} cssAnimationsOn={cssAnimationsOn} setModalVisible={setModalVisible} setModalInfo={setModalInfo} />
       <ToTopButton />
     </>
   )

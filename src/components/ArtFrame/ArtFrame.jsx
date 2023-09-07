@@ -6,6 +6,7 @@ export default function ArtFrame({
   frameColour,
   artname,
   traits,
+  expandArtwork
 }) {
   const frameIsLight = tinycolor(frameColour).isLight();
 
@@ -22,16 +23,16 @@ export default function ArtFrame({
         <span
           className="artframe__name"
           style={{ color: frameIsLight ? "black" : "white" }}
+          onClick={expandArtwork}
         >
           {artname}
         </span>
 
         <ul className="artframe__traits">
           {traits.map((trait) => (
-            <div className="artframe__trait">
+            <div className="artframe__trait" key={artname + trait.name}>
               <img
                 className="artframe__trait-icon"
-                key={artname + trait.name}
                 src={trait.icon}
               />
               <span className="artframe__trait-tooltip">

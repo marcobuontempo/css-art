@@ -7,21 +7,21 @@ export default {
     ONEDIV: {
         name: 'ONE DIV',
         icon: ONEDIV_ICON,
-        description: 'only uses 1 single <div> element in the entire piece',
+        description: 'One Div: entire piece is contained inside a single HTML element',
     },
     PIXELART: {
         name: 'PIXEL ART',
         icon: PIXELART_ICON,
-        description: 'squares are the exclusive building blocks of the piece',
+        description: 'Pixel Art: squares are the exclusive building blocks of the piece',
     },
     ANIMATED: {
         name: 'ANIMATED',
         icon: ANIMATED_ICON,
-        description: 'includes CSS animations',
+        description: 'Animated: includes CSS animations',
     },
     INTERACTIVE: {
         name: 'INTERACTIVE',
         icon: INTERACTIVE_ICON,
-        description: 'reacts to user inputs in some way (click, hover, drag, etc.)',
+        description: 'Interactive: reacts to user inputs in some way (click, hover, drag, etc.)',
     },
 }

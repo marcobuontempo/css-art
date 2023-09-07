@@ -28,6 +28,11 @@
   white-space: nowrap;
 }
 
+.artframe__name:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .artframe__traits {
   display: flex;
   align-items: center;

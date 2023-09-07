@@ -5,14 +5,29 @@ import ArtFrame from "../ArtFrame/ArtFrame";
 import ArtworksList from "../ArtworksList/ArtworksList";
 import TRAITS from "../ArtworksList/TRAITS";
 
-export default function Gallery({ traitFilters, cssAnimationsOn }) {
+export default function Gallery({
+  traitFilters,
+  cssAnimationsOn,
+  setModalInfo,
+  setModalVisible
+}) {
+
+  const expandArtwork = (Artwork) => {
+    setModalInfo({
+      content: Artwork,
+      isArtwork: true,
+    });
+    setModalVisible(true);
+  };
 
   const isArtworkInFilter = (artworkTraits) => {
-    return traitFilters.every(key => artworkTraits.includes(TRAITS[key]))
-  } 
+    return traitFilters.every((key) => artworkTraits.includes(TRAITS[key]));
+  };
 
   return (
-    <main className={"gallery" + (cssAnimationsOn ? "" : " disable-animations")}>
+    <main
+      className={"gallery" + (cssAnimationsOn ? "" : " disable-animations")}
+    >
       {Object.keys(ArtworksList).map((k) => {
         const Artwork = ArtworksList[k];
 
@@ -25,8 +40,9 @@ export default function Gallery({ traitFilters, cssAnimationsOn }) {
               artworkComponent={<Artwork />}
               artname={Artwork.artname}
               traits={Artwork.traits}
+              expandArtwork={() => expandArtwork(Artwork)}
             />
-          )
+          );
         }
       })}
     </main>
