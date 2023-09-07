@@ -1,45 +1,71 @@
 .artframe {
-    --frame-width: 25px;
-    --frame-colour: white;
+  --art-size: 400px;
+  --frame-width: 25px;
+  --frame-colour: white;
 
-    position: relative;
-    width: 400px;
-    height: 400px;
-    min-width: 400px;
-    min-height: 400px;
-    border-radius: 10px;
-    background: var(--frame-colour);
-    border: var(--frame-width) solid var(--frame-colour);
+  position: relative;
+  width: var(--art-size);
+  height: var(--art-size);
+  min-width: var(--art-size);
+  min-height: var(--art-size);
+  border-radius: 10px;
+  background: var(--frame-colour);
+  border: var(--frame-width) solid var(--frame-colour);
 }
 
 .artframe__info {
-    position: absolute;
-    height: var(--frame-width);
-    bottom: calc(-1 * var(--frame-width));
-    left: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  position: absolute;
+  height: var(--frame-width);
+  bottom: calc(-1 * var(--frame-width));
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .artframe__name {
-    color: var(--frame-colour);
-    filter: invert(1) grayscale(1);
+  color: var(--frame-colour);
+  filter: invert(1) grayscale(1);
 }
 
 .artframe__traits {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    height: var(--frame-width);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: var(--frame-width);
 }
 
 .artframe__trait {
-    list-style-type: none;
-    padding: 0px 5px;
-    width: var(--frame-width);
-    height: 100%; 
-    object-fit: contain;
+  list-style-type: none;
+  height: 100%;
+}
+
+.artframe__trait-icon {
+  padding: 0px 5px;
+  width: var(--frame-width);
+  height: 100%;
+  object-fit: contain;
+}
+
+.artframe__trait-tooltip {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 100;
+
+  width: var(--art-size);
+  top: 100%;
+  left: 50%;
+  margin-left: -200px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.artframe__trait:hover .artframe__trait-tooltip {
+  visibility: visible;
 }
