@@ -5,7 +5,7 @@ import NavBar from './components/NavBar/NavBar'
 
 function App() {
   const [traitFilters, setTraitFilters] = useState([])
-  const [cssAnimationsOn, setCssAnimationsOn] = useState(true);
+  const [cssAnimationsOn, setCssAnimationsOn] = useState(false);
 
   return (
     <>
