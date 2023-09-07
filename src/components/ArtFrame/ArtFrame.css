@@ -26,10 +26,10 @@
 
 .artframe__name {
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .artframe__name:hover {
-  cursor: pointer;
   font-weight: bold;
 }
 

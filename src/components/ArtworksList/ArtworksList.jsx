@@ -33,6 +33,7 @@ import Shroom from "../../artworks/Shroom/Shroom";
 import Trapped from "../../artworks/Trapped/Trapped";
 import NoSignal from "../../artworks/NoSignal/NoSignal";
 import Freddy from "../../artworks/Freddy/Freddy";
+import Toyota from "../../artworks/Toyota/Toyota";
 
 
 /* 2. Add Artwork as property */
@@ -66,3 +67,4 @@ ArtworksList.Shroom = Shroom;
 ArtworksList.Trapped = Trapped;
 ArtworksList.NoSignal = NoSignal;
 ArtworksList.Freddy = Freddy;
+ArtworksList.Toyota = Toyota;
