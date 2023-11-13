@@ -1,5 +1,6 @@
 import "./NavBar.css";
 import TRAITS from '../ArtworksList/TRAITS'
+import ArtworksList from "../ArtworksList/ArtworksList";
 
 export default function NavBar({ traitFilters, setTraitFilters, cssAnimationsOn, setCssAnimationsOn }) {
   const toggleTrait = (trait) => {
@@ -10,6 +11,13 @@ export default function NavBar({ traitFilters, setTraitFilters, cssAnimationsOn,
 
   const toggleCssAnimations = () => {
     setCssAnimationsOn(!cssAnimationsOn);
+  }
+
+  const countVisibleArtworks = () => {
+    return Object.keys(ArtworksList).filter((k) => {
+      const Artwork = ArtworksList[k];
+      return traitFilters.every((key) => Artwork.traits.includes(TRAITS[key]));
+    }).length;
   }
 
   return (
@@ -28,8 +36,8 @@ export default function NavBar({ traitFilters, setTraitFilters, cssAnimationsOn,
         }
         )}
       </ul>
-      
-      <p className="navbar__artwork_count">Displaying TBC of TBC</p>
+
+      <p className="navbar__artwork_count">Displaying {countVisibleArtworks()} of {Object.keys(ArtworksList).length}</p>
 
       <button onClick={toggleCssAnimations}>CSS Animations {cssAnimationsOn ? "ON" : "OFF"}</button>
     </nav>
