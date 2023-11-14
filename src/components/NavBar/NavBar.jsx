@@ -1,8 +1,13 @@
 import "./NavBar.css";
 import TRAITS from '../ArtworksList/TRAITS'
 import ArtworksList from "../ArtworksList/ArtworksList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 export default function NavBar({ traitFilters, setTraitFilters, cssAnimationsOn, setCssAnimationsOn }) {
+  const [burgerOpen, setBurgerOpen] = useState(false);
+
   const toggleTrait = (trait) => {
     const updatedFilters = traitFilters.filter(value => value !== trait)
     if (updatedFilters.length === traitFilters.length) updatedFilters.push(trait)
@@ -20,9 +25,15 @@ export default function NavBar({ traitFilters, setTraitFilters, cssAnimationsOn,
     }).length;
   }
 
+  const expandBurger = () => {
+    setBurgerOpen(!burgerOpen);
+  }
+
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${burgerOpen && "navbar__open"}`}>
       <h1 className="navbar__title">css art</h1>
+      <FontAwesomeIcon icon={faBars} size="3x" className="navbar__burger" onClick={expandBurger} />
       <ul className="navbar__list">
         {Object.keys(TRAITS).map(trait => {
           return (
