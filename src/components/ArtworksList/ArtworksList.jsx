@@ -34,6 +34,7 @@ import Trapped from "../../artworks/Trapped/Trapped";
 import NoSignal from "../../artworks/NoSignal/NoSignal";
 import Freddy from "../../artworks/Freddy/Freddy";
 import Toyota from "../../artworks/Toyota/Toyota";
+import MoreToCome from "../../artworks/MoreToCome/MoreToCome";
 
 
 /* 2. Add Artwork as property */
@@ -62,6 +63,7 @@ ArtworksList.Toyota = Toyota;
 ArtworksList.Scenic = Scenic;
 ArtworksList.Orbit = Orbit;
 ArtworksList.Barbell = Barbell;
+ArtworksList.MoreToCome = MoreToCome;
 // ArtworksList.Shaker = Shaker;
 // ArtworksList.Shroom = Shroom;
 // ArtworksList.Harold = Harold;
