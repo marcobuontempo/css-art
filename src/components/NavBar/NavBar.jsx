@@ -37,9 +37,10 @@ export default function NavBar({ traitFilters, setTraitFilters, cssAnimationsOn,
         )}
       </ul>
 
-      <p className="navbar__artwork_count">Displaying {countVisibleArtworks()} of {Object.keys(ArtworksList).length}</p>
+      <button className={`navbar__animation_toggle ${cssAnimationsOn ? "animation_on" : "animation_off"}`} onClick={toggleCssAnimations}>CSS Animations {cssAnimationsOn ? "ON" : "OFF"}</button>
+      
+      <p className="navbar__artwork_count">Displaying {countVisibleArtworks()} of {Object.keys(ArtworksList).length} artworks</p>
 
-      <button onClick={toggleCssAnimations}>CSS Animations {cssAnimationsOn ? "ON" : "OFF"}</button>
     </nav>
   );
 }
