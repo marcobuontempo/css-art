@@ -16,14 +16,15 @@ export default function ArtFrame({
   const [scaleAmount, setScaleAmount] = useState(scaleFactor);
   const artSize = 400;
   const frameWidth = 25;
+  const mainShade = tinycolor(frameColour).isLight() ? "black" : "white";
+  const contrastShade = mainShade === "white" ? "black" : "white";
 
-  const frameIsLight = tinycolor(frameColour).isLight();
 
   const handleArtworkScale = () => {
     const w = window.innerWidth;
     const currentW = scaleAmount * artSize;
     if (currentW > w) {
-      setScaleAmount((w/currentW) * scaleFactor);
+      setScaleAmount((w / currentW) * scaleFactor);
     } else {
       setScaleAmount(scaleFactor);
     }
@@ -50,12 +51,18 @@ export default function ArtFrame({
       role="img"
       aria-label={artname}
     >
-      {artworkComponent}
+      <div className="artframe__artwork_container">
+        {artworkComponent}
+      </div>
 
       <div className="artframe__info">
         <span
           className="artframe__name"
-          style={{ color: frameIsLight ? "black" : "white" }}
+          style={{
+            color: mainShade,
+            "--shiny-shade": contrastShade,
+            "--shiny-shade-50a": (contrastShade === "white") ? "rgba(255,255,255,0.5)" : "rgba(0,0,0,0.5)"
+          }}
           onClick={expandArtwork}
         >
           {artname}
@@ -65,7 +72,7 @@ export default function ArtFrame({
           {traits.map((trait) => (
             <div className="artframe__trait" key={artname + trait.name}>
               <div className="artframe__trait_icon">
-                <FontAwesomeIcon size="xs" icon={trait.icon} color={frameIsLight ? "black" : "white"} />
+                <FontAwesomeIcon size="xs" icon={trait.icon} color={mainShade} />
               </div>
               <span className="artframe__trait_tooltip">
                 {trait.description}

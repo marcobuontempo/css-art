@@ -12,8 +12,8 @@ export default function Modal({ children, visible, setVisible, isArtwork = false
   };
 
   if (isArtwork === true) {
-    const mainColour = tinycolor(Artwork.frameColour).isLight() ? "white" : "black";
-    const contrastColour = mainColour === "white" ? "black" : "white";
+    const mainShade = tinycolor(Artwork.frameColour).isLight() ? "white" : "black";
+    const contrastShade = mainShade === "white" ? "black" : "white";
     const formattedArtname = Artwork.artname.replace(/[^a-zA-Z]/g, "");
     const githubLinks = {
       jsx: `https://github.com/marcobuontempo/css-art/tree/main/src/artworks/${formattedArtname}/${formattedArtname}.jsx`,
@@ -25,13 +25,13 @@ export default function Modal({ children, visible, setVisible, isArtwork = false
         <div className="modal__main"
           style={{ "--frame-colour": Artwork.frameColour }}>
           <div className="modal__head">
-            <h2 className="modal__title" style={{ color: contrastColour }}>{Artwork.artname}</h2>
+            <h2 className="modal__title" style={{ color: contrastShade }}>{Artwork.artname}</h2>
             <div className="modal__artwork_gh">
               <a target="_blank" rel="noreferrer" href={githubLinks.jsx}>
-                <FontAwesomeIcon icon={faFileCode} size="2x" color={contrastColour} />
+                <FontAwesomeIcon icon={faFileCode} size="2x" color={contrastShade} />
               </a>
               <a target="_blank" rel="noreferrer" href={githubLinks.css}>
-                <FontAwesomeIcon icon={faCss3Alt} size="2x" color={contrastColour} />
+                <FontAwesomeIcon icon={faCss3Alt} size="2x" color={contrastShade} />
               </a>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function Modal({ children, visible, setVisible, isArtwork = false
             traits={Artwork.traits}
             isModal={true}
           />
-          <button className="modal__close" onClick={closeModal} style={{ color: mainColour, border: `2px solid ${mainColour}`, background: contrastColour }}>Close</button>
+          <button className="modal__close" onClick={closeModal} style={{ color: mainShade, border: `2px solid ${mainShade}`, background: contrastShade }}>Close</button>
         </div>
       </div>
     );

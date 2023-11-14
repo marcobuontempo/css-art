@@ -10,9 +10,9 @@
     background-repeat: repeat;    overflow: hidden;
 }
 
-.gallery.disable-animations *, 
-.gallery.disable-animations *::before, 
-.gallery.disable-animations *::after {
+.gallery.disable-animations .artframe__artwork_container *, 
+.gallery.disable-animations .artframe__artwork_container *::before, 
+.gallery.disable-animations .artframe__artwork_container *::after {
     animation: 0s !important;
     cursor: default;
 }
