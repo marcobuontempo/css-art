@@ -1,21 +1,52 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./ArtFrame.css";
 import tinycolor from "tinycolor2";
+import { useEffect, useState } from "react";
 
 export default function ArtFrame({
   artworkComponent,
-  frameColour,
+  frameColour = "white",
   artname,
   traits,
+  scaleFactor = 1,
+  isModal = false,
   expandArtwork = () => null,
-  isModal = false
 }) {
+
+  const [scaleAmount, setScaleAmount] = useState(scaleFactor);
+  const artSize = 400;
+  const frameWidth = 25;
+
   const frameIsLight = tinycolor(frameColour).isLight();
+
+  const handleArtworkScale = () => {
+    const w = window.innerWidth;
+    const currentW = scaleAmount * artSize;
+    if (currentW > w) {
+      setScaleAmount((w/currentW) * scaleFactor);
+    } else {
+      setScaleAmount(scaleFactor);
+    }
+  }
+
+  useEffect(() => {
+    handleArtworkScale();
+    const resizeListener = window.addEventListener('resize', handleArtworkScale);
+
+    return () => {
+      resizeListener;
+    }
+  }, [])
 
   return (
     <article
       className={`artframe ${isModal && "artframe__is_modal"}`}
-      style={{ "--frame-colour": frameColour }}
+      style={{
+        "--frame-colour": frameColour,
+        "--art-size": `${artSize}px`,
+        "--frame-width": `${frameWidth}px`,
+        "--art-scale": `${scaleAmount}`,
+      }}
       role="img"
       aria-label={artname}
     >

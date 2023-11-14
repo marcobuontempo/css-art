@@ -34,10 +34,6 @@
     user-select: none;
 }
 
-.navbar__item:hover {
-    filter: invert(100%);
-}
-
 .navbar__item.selected {
     background-color: aquamarine;
 }
@@ -77,23 +73,28 @@
 /* MOBILE LAYOUT */
 @media only screen and (max-width: 480px) {
     .navbar__open.navbar {
+        position: fixed;
         height: 100%;
+        width: 100%;
         justify-content: space-around;
+        z-index: 999999;
     }
 
     .navbar__open.navbar .navbar__list {
+        display: flex;
         flex-direction: column;
-    }
-
-    .navbar__open.navbar .navbar__item {
+        gap: 10px;
         font-size: 2em;
     }
 
-    .navbar__open.navbar .navbar__list,
-    .navbar__open.navbar .navbar__animation_toggle,
-    .navbar__open.navbar .navbar__artwork_count {
-        font-size: 2em;
+    .navbar__open.navbar .navbar__animation_toggle {
         display: block;
+        font-size: 2em;
+    }
+
+    .navbar__open.navbar .navbar__artwork_count {
+        display: block;
+        font-size: 1.5em;
     }
 
     .navbar {

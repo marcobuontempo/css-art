@@ -1,8 +1,4 @@
 .artframe {
-  --art-size: 400px;
-  --frame-width: 25px;
-  --frame-colour: white;
-
   position: relative;
   width: var(--art-size);
   height: var(--art-size);
@@ -11,6 +7,7 @@
   border-radius: 10px;
   background: var(--frame-colour);
   border: var(--frame-width) solid var(--frame-colour);
+  transform: scale(var(--art-scale));
 }
 
 .artframe__info {

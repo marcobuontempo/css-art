@@ -7,7 +7,7 @@ import Modal from './components/Modal/Modal'
 
 function App() {
   const [traitFilters, setTraitFilters] = useState([])
-  const [cssAnimationsOn, setCssAnimationsOn] = useState(false);
+  const [cssAnimationsOn, setCssAnimationsOn] = useState(true);
   const [modalInfo, setModalInfo] = useState({});
   const [modalVisible, setModalVisible] = useState(false);
 

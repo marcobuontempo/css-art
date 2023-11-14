@@ -11,6 +11,7 @@
     position: fixed;
     z-index: 1000;
     background: rgba(0, 0, 0, 0.5);
+    overflow: scroll;
 }
 
 .modal__main {
@@ -64,4 +65,16 @@
 
 .modal__close:hover {
     filter: brightness(0.9);
+}
+
+
+/* MOBILE LAYOUT */
+@media only screen and (max-width: 768px) {
+    .modal {
+        padding: 0%;
+    }
+
+    .modal__main {
+        border-radius: 0px;
+    }
 }
