@@ -26,7 +26,7 @@
 
 .artframe__name {
   white-space: nowrap;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .artframe__name:hover {
@@ -51,6 +51,7 @@
   width: var(--frame-width);
   height: 100%;
   object-fit: contain;
+  text-align: center;
 }
 
 .artframe__trait_tooltip {
@@ -70,6 +71,12 @@
   margin-left: calc(var(--art-size) / -2);
 
   cursor: default;
+  white-space-collapse: break-spaces;
+}
+
+.artframe__trait_icon:hover {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .artframe__trait:hover .artframe__trait_tooltip {

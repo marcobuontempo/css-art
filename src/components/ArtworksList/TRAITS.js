@@ -19,6 +19,6 @@ export default {
     INTERACTIVE: {
         name: 'INTERACTIVE',
         icon: faHandPointer,
-        description: 'Interactive: reacts to user inputs in some way (click, hover, drag, etc.)',
+        description: 'Interactive: reacts to user inputs in some way (click, hover, drag, etc.).\n*Please ensure CSS Animations are toggled to ON*',
     },
 }
