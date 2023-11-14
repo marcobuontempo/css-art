@@ -15,9 +15,8 @@
 
 /* MOST OF CHILLI SHAPE */
 .corno {
-  border-radius: 10px;
   max-height: 400px;
-  transform: scale(0.75);
+  transform: scale(0.55) rotate(10deg);
   background:
     linear-gradient(to bottom, var(--bg) 32%, transparent 32%),
     linear-gradient(to right, var(--bg) 38%, transparent 38% 61.25%, var(--bg) 61.25%),    

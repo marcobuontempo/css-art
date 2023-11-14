@@ -6,5 +6,5 @@ export default function Corno() {
 }
 
 Corno.artname = "Corno.";
-Corno.frameColour = "crimson";
+Corno.frameColour = "teal";
 Corno.traits = [TRAITS.ONEDIV];

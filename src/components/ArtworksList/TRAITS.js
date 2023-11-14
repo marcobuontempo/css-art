@@ -1,27 +1,24 @@
-import ONEDIV_ICON from "../../images/trait-badges/ONEDIV.png";
-import ANIMATED_ICON from "../../images/trait-badges/ANIMATED.png";
-import PIXELART_ICON from "../../images/trait-badges/PIXELART.png";
-import INTERACTIVE_ICON from "../../images/trait-badges/INTERACTIVE.png";
+import { fa1, faGrip, faCirclePlay, faHandPointer } from "@fortawesome/free-solid-svg-icons";
 
 export default {
     ONEDIV: {
         name: 'ONE DIV',
-        icon: ONEDIV_ICON,
+        icon: fa1,
         description: 'One Div: entire piece is contained inside a single HTML element',
     },
     PIXELART: {
         name: 'PIXEL ART',
-        icon: PIXELART_ICON,
+        icon: faGrip,
         description: 'Pixel Art: squares are the exclusive building blocks of the piece',
     },
     ANIMATED: {
         name: 'ANIMATED',
-        icon: ANIMATED_ICON,
+        icon: faCirclePlay,
         description: 'Animated: includes CSS animations',
     },
     INTERACTIVE: {
         name: 'INTERACTIVE',
-        icon: INTERACTIVE_ICON,
+        icon: faHandPointer,
         description: 'Interactive: reacts to user inputs in some way (click, hover, drag, etc.)',
     },
 }

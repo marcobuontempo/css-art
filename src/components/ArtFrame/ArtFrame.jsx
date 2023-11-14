@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./ArtFrame.css";
 import tinycolor from "tinycolor2";
 
@@ -31,11 +32,10 @@ export default function ArtFrame({
         <ul className="artframe__traits">
           {traits.map((trait) => (
             <div className="artframe__trait" key={artname + trait.name}>
-              <img
-                className="artframe__trait-icon"
-                src={trait.icon}
-              />
-              <span className="artframe__trait-tooltip">
+              <div className="artframe__trait_icon">
+                <FontAwesomeIcon size="xs" icon={trait.icon} color={frameIsLight ? "black" : "white"} />
+              </div>
+              <span className="artframe__trait_tooltip">
                 {trait.description}
               </span>
             </div>
