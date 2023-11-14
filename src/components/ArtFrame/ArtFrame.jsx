@@ -7,13 +7,14 @@ export default function ArtFrame({
   frameColour,
   artname,
   traits,
-  expandArtwork
+  expandArtwork = () => null,
+  isModal = false
 }) {
   const frameIsLight = tinycolor(frameColour).isLight();
 
   return (
     <article
-      className="artframe"
+      className={`artframe ${isModal && "artframe__is_modal"}`}
       style={{ "--frame-colour": frameColour }}
       role="img"
       aria-label={artname}

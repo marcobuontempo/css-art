@@ -82,3 +82,8 @@
 .artframe__trait:hover .artframe__trait_tooltip {
   visibility: visible;
 }
+
+
+.artframe__is_modal .artframe__info {
+  display: none;
+}
