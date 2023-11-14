@@ -2,6 +2,7 @@
   "name": "css-art",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://marcobuontempo.github.io/css-art",
   "type": "module",
   "scripts": {
     "dev": "vite",
