@@ -5,16 +5,17 @@
   height: 100%;
   position: absolute;
   margin: auto;
-  --bg: magenta;
-  --c1: orange;
-  --c2: darkturquoise;
-  --c3: black;
+  --bg1: darkturquoise;
+  --bg2: white;
+  --c1: green;
+  --c2: white;
+  --c3: red;
 }
 
 /* BACKGROUND */
 .trescomas {
   background:
-    linear-gradient(to bottom, var(--bg) 70%, darkturquoise 82% 100%);
+    linear-gradient(to bottom, var(--bg1) 70%, var(--bg2) 82% 100%);
 }
 
 /* SHADOW */
@@ -40,15 +41,15 @@
   bottom: 0;
   background:
     radial-gradient(ellipse 60% 60% at 30% 50%, var(--c1) 12%, transparent 13%),
-    radial-gradient(ellipse 70% 90% at 24% 49%, var(--bg) 12%, transparent 13%),
+    radial-gradient(ellipse 70% 90% at 24% 49%, var(--bg1) 12%, transparent 13%),
     radial-gradient(ellipse 68% 64% at 29% 52%, var(--c1) 12%, transparent 13%),
 
     radial-gradient(ellipse 60% 60% at 50% 50%, var(--c2) 12%, transparent 13%),
-    radial-gradient(ellipse 70% 90% at 44% 49%, var(--bg) 12%, transparent 13%),
+    radial-gradient(ellipse 70% 90% at 44% 49%, var(--bg1) 12%, transparent 13%),
     radial-gradient(ellipse 68% 64% at 49% 52%, var(--c2) 12%, transparent 13%),
 
     radial-gradient(ellipse 60% 60% at 70% 50%, var(--c3) 12%, transparent 13%),
-    radial-gradient(ellipse 70% 90% at 64% 49%, var(--bg) 12%, transparent 13%),
+    radial-gradient(ellipse 70% 90% at 64% 49%, var(--bg1) 12%, transparent 13%),
     radial-gradient(ellipse 68% 64% at 69% 52%, var(--c3) 12%, transparent 13%);
 
   animation: trescomas-bounce 3s ease-in infinite alternate, trescomas-rotate 6s ease-in-out infinite alternate;

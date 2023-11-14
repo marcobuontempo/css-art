@@ -13,6 +13,9 @@
 .navbar__title {
     text-align: center;
     font-size: 4em;
+    text-shadow: 2px 2px 3px black;
+    color: black;
+    mix-blend-mode: hard-light;
 }
 
 .navbar__list {
