@@ -10,6 +10,11 @@
   transform: scale(var(--art-scale));
 }
 
+.artframe__artwork_container {
+  width: 100%;
+  height: 100%;
+}
+
 .artframe__info {
   position: absolute;
   height: var(--frame-width);
