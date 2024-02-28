@@ -9,9 +9,8 @@ export default function Gallery({
   traitFilters,
   cssAnimationsOn,
   setModalInfo,
-  setModalVisible
+  setModalVisible,
 }) {
-
   const expandArtwork = (Artwork) => {
     setModalInfo({
       content: Artwork,
@@ -28,7 +27,7 @@ export default function Gallery({
     <main
       className={"gallery" + (cssAnimationsOn ? "" : " disable-animations")}
     >
-      {Object.keys(ArtworksList).map((k) => {
+      {Object.keys(ArtworksList).map((k, i) => {
         const Artwork = ArtworksList[k];
 
         if (isArtworkInFilter(Artwork.traits)) {

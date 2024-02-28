@@ -1,122 +1,122 @@
 .navbar {
-    height: var(--navbar-height);
-    background-color: antiquewhite;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    cursor: default;
-    padding: 5px 0px;
+  height: var(--navbar-height);
+  background-color: antiquewhite;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: default;
+  padding: 5px 0px;
 }
 
 .navbar__title {
-    text-align: center;
-    font-size: 4em;
-    text-shadow: 2px 2px 3px black;
-    color: black;
-    mix-blend-mode: hard-light;
+  font-family: sans-serif;
+  letter-spacing: 0.2em;
+  text-align: center;
+  font-size: 4em;
+  text-shadow: 2px 2px 3px black;
+  color: black;
+  mix-blend-mode: hard-light;
 }
 
 .navbar__list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .navbar__item {
-    list-style-type: none;
-    padding: 2px 10px;
-    border: 2px solid grey;
-    border-radius: 10px;
-    background-color: white;
-    cursor: pointer;
-    user-select: none;
+  list-style-type: none;
+  padding: 2px 10px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  user-select: none;
 }
 
 .navbar__item.selected {
-    background-color: aquamarine;
+  background-color: aquamarine;
 }
 
 .navbar__animation_toggle {
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 2px 20px;
-    border: 2px solid black;
-    cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 2px 20px;
+  border: 2px solid black;
+  cursor: pointer;
 }
 
 .navbar__animation_toggle.animation_on {
-    background-color: lightcyan;
+  background-color: lightcyan;
 }
 
 .navbar__animation_toggle.animation_off {
-    background-color: tomato;
+  background-color: tomato;
 }
 
 .navbar__animation_toggle:hover {
-    filter: brightness(0.9);
+  filter: brightness(0.9);
 }
 
 .navbar__artwork_count {
-    font-style: italic;
-    font-size: 0.85em;
+  font-style: italic;
+  font-size: 0.85em;
 }
 
 .navbar__burger {
-    display: none;
+  display: none;
 }
-
-
-
 
 /* MOBILE LAYOUT */
 @media only screen and (max-width: 480px) {
-    .navbar__open.navbar {
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        justify-content: space-around;
-        z-index: 999999;
-    }
+  .navbar__open.navbar {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 999999;
+  }
 
-    .navbar__open.navbar .navbar__list {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        font-size: 2em;
-    }
+  .navbar__open.navbar .navbar__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 2em;
+  }
 
-    .navbar__open.navbar .navbar__animation_toggle {
-        display: block;
-        font-size: 2em;
-    }
+  .navbar__open.navbar .navbar__animation_toggle {
+    display: block;
+    font-size: 2em;
+  }
 
-    .navbar__open.navbar .navbar__artwork_count {
-        display: block;
-        font-size: 1.5em;
-    }
+  .navbar__open.navbar .navbar__artwork_count {
+    display: block;
+    font-size: 1.5em;
+  }
 
-    .navbar {
-        justify-content: center;
-        position: relative;
-    }
+  .navbar {
+    justify-content: center;
+    position: relative;
+  }
 
-    .navbar__list,
-    .navbar__animation_toggle,
-    .navbar__artwork_count {
-        display: none;
-    }
+  .navbar__list,
+  .navbar__animation_toggle,
+  .navbar__artwork_count {
+    display: none;
+  }
 
-    .navbar__title {
-        display: inline;
-    }
+  .navbar__title {
+    display: inline;
+    font-size: 2.5em;
+  }
 
-    .navbar__burger {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: calc(var(--navbar-height) / 2);
-        transform: translate(0, -50%);
-    }
+  .navbar__burger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: calc(var(--navbar-height) / 2);
+    transform: translate(0, -50%);
+  }
 }

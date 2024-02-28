@@ -1,18 +1,23 @@
 .gallery {
-    min-height: calc(100% - var(--navbar-height));
-    display: flex;
-    gap: 30px;
-    padding: 50px;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-size: 10px 10px;
-    background-image: radial-gradient(ellipse 10% 10% at 50% 50%, grey 20%, cornsilk 75%);
-    background-repeat: repeat;    overflow: hidden;
+  min-height: calc(100% - var(--navbar-height));
+  display: flex;
+  gap: 30px;
+  padding: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-size: 10px 10px;
+  background-image: radial-gradient(
+    ellipse 10% 10% at 50% 50%,
+    grey 20%,
+    cornsilk 75%
+  );
+  background-repeat: repeat;
+  overflow: hidden;
 }
 
-.gallery.disable-animations .artframe__artwork_container *, 
-.gallery.disable-animations .artframe__artwork_container *::before, 
+.gallery.disable-animations .artframe__artwork_container *,
+.gallery.disable-animations .artframe__artwork_container *::before,
 .gallery.disable-animations .artframe__artwork_container *::after {
-    animation: 0s !important;
-    cursor: default;
+  animation-play-state: paused;
+  cursor: default;
 }
