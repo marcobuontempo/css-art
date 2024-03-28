@@ -38,6 +38,7 @@ import MoreToCome from "../../artworks/MoreToCome/MoreToCome";
 import Pokeball from "../../artworks/Pokeball/Pokeball";
 import ParadiseAgain from "../../artworks/ParadiseAgain/ParadiseAgain";
 import Chrome from "../../artworks/Chrome/Chrome";
+import Rain from "../../artworks/Rain/Rain";
 
 
 /* 2. Add Artwork as property */
@@ -59,6 +60,7 @@ ArtworksList.Popcorn = Popcorn;
 ArtworksList.Amaze = Amaze;
 ArtworksList.Scenic = Scenic;
 ArtworksList.AvoPear = AvoPear;
+ArtworksList.Pokeball = Pokeball;
 ArtworksList.Corridor = Corridor;
 ArtworksList.TresComas = TresComas;
 ArtworksList.Heart = Heart;
@@ -66,9 +68,9 @@ ArtworksList.Toyota = Toyota;
 ArtworksList.ImATeapot = ImATeapot;
 ArtworksList.Orbit = Orbit;
 ArtworksList.Barbell = Barbell;
-ArtworksList.Pokeball = Pokeball;
 ArtworksList.ParadiseAgain = ParadiseAgain;
 ArtworksList.Chrome = Chrome;
+ArtworksList.Rain = Rain;
 ArtworksList.MoreToCome = MoreToCome;
 // ArtworksList.Shaker = Shaker;
 // ArtworksList.Shroom = Shroom;
