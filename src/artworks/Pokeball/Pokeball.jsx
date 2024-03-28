@@ -6,5 +6,5 @@ export default function Pokeball() {
 }
 
 Pokeball.artname = "Pokeball.";
-Pokeball.frameColour = "whitesmoke";
-Pokeball.traits = [TRAITS.ONEDIV, TRAITS.ANIMATED];
+Pokeball.frameColour = "black";
+Pokeball.traits = [TRAITS.ONEDIV];

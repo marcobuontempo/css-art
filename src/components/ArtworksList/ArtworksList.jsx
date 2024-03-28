@@ -36,6 +36,7 @@ import Freddy from "../../artworks/Freddy/Freddy";
 import Toyota from "../../artworks/Toyota/Toyota";
 import MoreToCome from "../../artworks/MoreToCome/MoreToCome";
 import Pokeball from "../../artworks/Pokeball/Pokeball";
+import ParadiseAgain from "../../artworks/ParadiseAgain/ParadiseAgain";
 
 
 /* 2. Add Artwork as property */
@@ -65,6 +66,7 @@ ArtworksList.ImATeapot = ImATeapot;
 ArtworksList.Orbit = Orbit;
 ArtworksList.Barbell = Barbell;
 ArtworksList.Pokeball = Pokeball;
+ArtworksList.ParadiseAgain = ParadiseAgain;
 ArtworksList.MoreToCome = MoreToCome;
 // ArtworksList.Shaker = Shaker;
 // ArtworksList.Shroom = Shroom;
